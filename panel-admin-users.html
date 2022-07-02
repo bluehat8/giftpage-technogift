@@ -1,0 +1,357 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo-admin.css">
+
+    <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="las la-user"></span> <span>TECHNO GIFT</span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="panel-administrador.html"><span class="las la-boxes"></span>
+                    <span>Productos</span></a>
+                </li>
+                
+                <li>
+                    <a  class="active" href="panel-admin-users.html"><span class="las la-user"></span>
+                    <span>Usuarios</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-money-bill"></span>
+                        <span>Ventas</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-inbox"></span>
+                    <span>Mensajes</span></a>
+                </li>
+                
+                
+                <li>
+                    <a href="login.html"><span class="las la-sign-out-alt"></span>
+                    <span>Cerrar sesión</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> Usuarios
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Buscar aquí" />
+            </div>
+            <div class="user-wrapper">
+                <img src="img/Avatar.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cards">
+
+                <div class="card-single">
+                    <div>
+                        <h1>35</h1>
+                        <span>Usuarios</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>25</h1>
+                        <span>Usuarios de alta</span>
+                    </div>
+                    <div>
+                        <span class="las la-arrow-up"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>10</h1>
+                        <span>Usuarios de baja</span>
+                    </div>
+                    <div>
+                        <span class="las la-long-arrow-alt-down"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>2</h1>
+                        <span>Nuevos usuarios</span>
+                    </div>
+                    <div>
+                        <span class="lab la-wpforms"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--MODAL REGISTER-->
+
+            <div id="myModal" class="container">
+                <span class="close">&times;</span>
+                <div class="text">
+                   Modificar estado del usuario
+                </div>
+                <form action="#">
+                   <div class="data">
+                      <label>Nombre del cliente</label>
+                      <input type="text" readonly value="Jhon Deib" required>
+                   </div>
+
+                   
+
+                 <div class="data">
+                    <label>Estado</label>
+                    <select name="cars" id="cars">
+                        <option value="Alta">Alta</option>
+                        <option value="Baja">Baja</option>
+                        
+
+
+
+                      </select>
+                 </div>
+
+                
+
+                   
+                   <div class="btn">
+                      <div class="inner"></div>
+                      <button type="submit">Actualizar estado</button>
+                   </div>
+                   
+                </form>
+             </div>
+
+            <!--END MODAL REGISTER-->
+
+
+
+
+            <!--Tabla-->
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Usuarios</h3>
+
+                            <button>Mostrar todo <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Nombre</td>
+                                            <td>Apellido</td>
+                                            <td>Estado</td>
+                                            <td>Modificar estado</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jhon Deiby</td>
+                                            <td>Salazar Rayo</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Victor Manuel</td>
+                                            <td>Ciro Ledesma</td>
+                                            <td>
+                                                <span class="status red"></span> Baja
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Julian Andres</td>
+                                            <td>Quesada Carmona</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal"" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Andres</td>
+                                            <td>Hernandez</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Manuel</td>
+                                            <td>Chicangana</td>
+                                            <td>
+                                                <span class="status red"></span> Baja
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Julieta</td>
+                                            <td>Quesad</td>
+                                            <td>
+                                                <span class="status red"></span> Baja                                            </td>
+                                                <td>
+                                                    <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                                </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Marleny</td>
+                                            <td>Salazar Orozco</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Kelly</td>
+                                            <td>Gil Ortiz</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Bilma</td>
+                                            <td>Ortiz Bermudez</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Julian Andres</td>
+                                            <td>Salazar Rayo</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Jhonatan</td>
+                                            <td>Velazco</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Samir</td>
+                                            <td>Vidal Carmona</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal"" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Karen</td>
+                                            <td>Orozco Sanches</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal"" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Emiliano</td>
+                                            <td>Chicaganda</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>Jhon Jairo</td>
+                                            <td>Salazar Gallego</td>
+                                            <td>
+                                                <span class="status green"></span> Alta
+                                            </td>
+                                            <td>
+                                                <a id="myBtn"  href="#myModal" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>     
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+               
+
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
