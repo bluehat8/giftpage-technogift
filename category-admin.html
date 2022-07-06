@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="CSS/estilo-admin.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+
+
+    <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="backgroud-sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="las la-user"></span> <span>TECHNO GIFT</span></h2>        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="panel-administrador.html"><span class="las la-boxes"></span>
+                    <span>Productos</span></a>
+                </li>
+
+
+                <li>
+                    <a href="" class="active"><span class="las la-th-large"></span>
+                    <span>Categorías</span></a>
+                </li>
+                
+                <li>
+                    <a href="panel-admin-users.html"><span class="las la-user"></span>
+                    <span>Usuarios</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-money-bill"></span>
+                    <span>Ventas</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-inbox"></span>
+                    <span>Mensajes</span></a>
+                </li>
+                
+                
+                <li>
+                    <a href="login.html"><span class="las la-sign-out-alt"></span>
+                    <span>Cerrar sesión</span></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="background-header">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> Categoría
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Buscar aquí" />
+            </div>
+            <div class="user-wrapper">
+                <img src="img/Avatar.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+        </div>
+
+        <main>
+            <div class="cards">
+
+                <div class="card-single">
+                    <div>
+                        <h1>5</h1>
+                        <span>Categorías</span>
+                    </div>
+                    <div>
+                        <span class="las la-box-open"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>12</h1>
+                        <span>Total de productos</span>
+                    </div>
+                    <div>
+                        <span class="las la-boxes"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>$1,000,000</h1>
+                        <span>Importe total promedio por categoría</span>
+                    </div>
+                    <div>
+                        <span class="las la-money-bill"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>100</h1>
+                        <span>Categoría con menores existencias: Audífonos</span>
+                    </div>
+                    <div>
+                        <span class="las la-minus-circle"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--MODAL REGISTER-->
+
+            <div id="myModal" class="container">
+                <span class="close">&times;</span>
+                <div class="text">
+                   Registro de categorías
+                </div>
+                <form action="#">
+                    <div class="data">
+                       <label>Categoría</label>
+                       <input type="text" required>
+                    </div>
+ 
+                    <div class="data">
+                     <label>Imagen</label>
+                     <input type="file" required>
+                  </div>
+ 
+                    <div class="data">
+                       <label>Descripción</label>
+                       <textarea name="" id="" cols="30" rows="10" placeholder="Escribe el mensaje aquí..." required></textarea>
+                     </div>
+ 
+                    
+                    <div class="btn">
+                       <div class="inner"></div>
+                       <button type="submit">Ingresar</button>
+                    </div>
+                    
+                 </form>
+             </div>
+
+            <!--END MODAL REGISTER-->
+
+
+
+
+
+            <!--MODAL EDIT-->
+
+            <div id="myModalEdit" class="container">
+                <span class="close1">&times;</span>
+                <div class="text">
+                   Actualizar categoría
+                </div>
+                <form action="#">
+                   <div class="data">
+                      <label>Categoría</label>
+                      <input type="text" required>
+                   </div>
+
+                   <div class="data">
+                    <label>Imagen</label>
+                    <input type="file" required>
+                 </div>
+
+                   <div class="data">
+                      <label>Descripción</label>
+                      <textarea name="" id="" cols="30" rows="10" placeholder="Escribe el mensaje aquí..." required></textarea>
+                    </div>
+
+                   
+                   <div class="btn">
+                      <div class="inner"></div>
+                      <button type="submit">Actualizar</button>
+                   </div>
+                   
+                </form>
+             </div>
+
+            <!--END MODAL EDIT-->
+
+
+            <!--modal de eliminacion-->
+<div id="myModalDelete" class="modal">
+    <div class="background1"></div>
+    <div class="alert-box">
+        <div class="icon">
+            <i class='bx bx-alarm-exclamation'></i> 
+            </div>
+           <h2>Confirmar eliminación</h2>
+            <p>¿Estás seguro de eliminar la categoría?</p>
+            <div class="btns">
+                <label class="yes" for="check">Sí</label>
+                <label class="cancel" for="check">Cancelar</label>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Modal de eliminacion-->
+
+
+
+
+
+            <!--Tabla-->
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Categoría existentes existentes</h3>
+
+                            <button id="myBtn"  href="#myModal" >Agregar categoría<span class="las la-plus-circle">
+                            </span></button>
+                            
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Imagen</td>
+
+                                            <td>Categoría</td>
+                                            <td>Descripción</td>
+                                            <td>Eliminar</td>
+                                            <td>Editar</td>
+                                          
+
+
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody style="overflow-y:auto;">
+                                        <tr>
+                                            <td><img src="img/audifonos.png" alt=""></td>
+
+                                            <td>Audífonos</td>
+                                         
+                                            <td>
+                                                Un audífono es un aparato electrónico que se usa dentro o 
+                                                detrás de la oreja. Amplifica ciertos sonidos, 
+                                                y al hacerlos más fuertes se hace más fácil oírlos.
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>        
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/moviles.png" alt=""></td>
+
+                                            <td>Móviles</td>
+                                         
+                                            <td>                                    
+                                                Un dispositivo móvil se puede definir como 
+                                                un aparato de pequeño tamaño, con algunas capacidades 
+                                                de procesamiento, con conexión permanente o intermitente a una red, 
+                                                con memoria limitada, que ha sido diseñado específicamente para una función, 
+                                                pero que puede llevar a cabo otras funciones más generales.
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>            
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/gaming.png" alt=""></td>
+
+                                            <td>Gaming</td>
+                                         
+                                            <td>
+                                                Artículos para gamers
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>               
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><img src="img/programadores.png" alt=""></td>
+
+                                            <td>Programadores</td>
+                                         
+                                            <td>
+                                                Artículos para programadores
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>               
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><img src="img/accesorios.png" alt=""></td>
+
+                                            <td>Accesorios</td>
+                                         
+                                            <td>
+                                                Accesorios tecnológicos
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>               
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><img src="img/personalizar.png" alt=""></td>
+
+                                            <td>Personalizables</td>
+                                         
+                                            <td>
+                                                Artículos personalizables
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>               
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><img src="img/portatiles.png" alt=""></td>
+
+                                            <td>Portátiles</td>
+                                         
+                                            <td>
+                                                Un computador portátil o laptop es un equipo personal que puede ser transportado fácilmente. Muchos de ellos 
+                                                están diseñados para soportar software y archivos igual de robustos a los que procesa un computador de escritorio.
+                                            </td>
+                                          
+                                            <td>
+                                        
+                                             <a id="myBtn1"  href="#myModalDelete"><i class="las la-trash-alt" style="color:#ffffff; font-size:32px;"></i></a>
+                                            </td> 
+                                                    
+                                            <td>
+                                                <a id="myBtn3"  href="#myModalEdit" class="deleteButton"><i class='bx bxs-edit-alt' style="color:#ffffff;font-size: 32px ;" ></i></a>
+                                            </td>               
+                                        </tr>
+                                       
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+              
+                
+            </div>
+        </main>
+
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/modal-cart.js"></script>
+    <script src="js/modal-update.js"></script>
+
+
+
+</body>
+
+</html>
