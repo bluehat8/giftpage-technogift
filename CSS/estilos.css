@@ -25,7 +25,7 @@ scroll-behavior: smooth;
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
-    }
+}
     
 
 ul{
@@ -41,20 +41,31 @@ ul{
 
 
 .navbar{
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 20px;
     color: whitesmoke;
+    z-index: 99999;
+    transition: 0.8s ease-in-out;
+    padding: 0px 20px;
+}
+
+.navbar.abajo{
+background: rgba(25, 34, 42, 0.25);
+box-shadow: 0 0 1px rgb(22, 60, 85);
+backdrop-filter: blur(20px);
+border: 1px solid rgba(31, 47, 63, 0.25);
+-webkit-backdrop-filter: blur( 20px );
+padding: 10px 20px;
+scroll-behavior: smooth;
 }
 
 .nav-links{
     display: flex;
     align-items: center;
-
 }
 
 .nav-links a{
@@ -69,6 +80,7 @@ ul{
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+    
 }
 .nav-links > li > a{
 	display: block;
@@ -84,13 +96,18 @@ ul{
 	display: none;
 	list-style: none;
 	width: 200px;
-	background-color: rgba(6, 16, 20, 1);
+	background: rgba(25, 34, 42, 0.5);
+    box-shadow: 0 0 1px rgb(22, 60, 85);
+    backdrop-filter: blur( 40px );
+    border: 1px solid rgba(31, 47, 63, 0.25);
+    -webkit-backdrop-filter: blur( 40px );
 }
 .nav-links li:hover .menu-vertical{
 	display: block;
 }
 .menu-vertical li:hover{
-	background-color: rgba(0, 135, 165, 1)
+	background-color: rgba(0, 135, 165, 0.5);
+    -webkit-backdrop-filter: blur( 40px );
 }
 
 .menu-vertical li a{
@@ -106,7 +123,7 @@ ul{
 /* end navbar*/
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url('../img/portada.png');
     background-position: bottom;
@@ -263,6 +280,8 @@ nav .navbar .search-box .input-box input{
     font-size: 18px;
     border-radius: 50px;
     background: linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
     border-color:transparent;
     color: white;
     padding: 15px 70px;
@@ -613,9 +632,13 @@ text-shadow: 6px 7px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
     display:flex;
     justify-content: center;
-
     justify-content: center;
 
+}
+
+.contenedor-reseñas img:hover {
+-webkit-backdrop-filter: blur(30px);
+filter:brightness(60%);
 }
 
 .opiniones{
@@ -638,6 +661,10 @@ position:absolute;
 width: 50%;
 height: 55%;
 }
+
+/*.box-commentary:hover ~ .commentary-img{
+   backdrop-filter: blur(30px);
+}*/
 
 
 /*textos*/
