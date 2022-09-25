@@ -1,4 +1,3 @@
-
 footer {
     padding: 100px 0;
 }
@@ -32,7 +31,7 @@ footer ul li {
 }
 
 .contact-socials a:hover {
-    color: var(--grey);
+    color: #006B91;
 }
 
 .menu li a {
@@ -65,7 +64,7 @@ footer ul li {
     transform: translateY(-50%);
     outline: 0;
     border: 0;
-    background-color:rgb(12, 163, 180);
+    background-color: rgb(12, 163, 180);
     color: var(--btn-color);
     padding: 10px;
     text-transform: uppercase;
@@ -103,7 +102,7 @@ footer ul li {
     text-transform: capitalize;
 }
 
-.filter-list > li {
+.filter-list>li {
     margin-bottom: 20px;
 }
 
@@ -111,13 +110,14 @@ footer ul li {
     display: none;
 }
 
-#filter-toggle{
+#filter-toggle {
     border: 1px solid white;
 }
 
-#filter-close{
+#filter-close {
     border: 1px solid white;
 }
+
 .price-range {
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ footer ul li {
     border: 2px solid #7b7979;
 }
 
-.group-checkbox label > i {
+.group-checkbox label>i {
     position: absolute;
     left: 2px;
     top: -2px;
@@ -175,7 +175,7 @@ footer ul li {
     transition: transform 0.1s ease-in-out;
 }
 
-.group-checkbox input:checked + label i {
+.group-checkbox input:checked+label i {
     transform: scale(1);
 }
 
@@ -189,7 +189,7 @@ footer ul li {
     justify-content: flex-end;
 }
 
-.pagination > li > a {
+.pagination>li>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,12 +199,12 @@ footer ul li {
     font-size: 20px;
 }
 
-.pagination > li > a.active {
+.pagination>li>a.active {
     background-color: var(--black);
     color: var(--main-bg-color);
 }
 
-.pagination > li > a:hover {
+.pagination>li>a:hover {
     border: 2px solid var(--black);
 }
 
@@ -214,7 +214,7 @@ footer ul li {
     justify-content: center;
 }
 
-.product-img > img {
+.product-img>img {
     max-width: 70%;
 }
 
@@ -239,7 +239,7 @@ footer ul li {
     padding: 45px 0;
 }
 
-.product-info > * ~ * {
+.product-info>*~* {
     margin-top: 25px;
 }
 
@@ -370,8 +370,8 @@ footer ul li {
         display: flex;
     }
 
-    .search{
-    left: 0%;
+    .search {
+        left: 0%;
 
     }
 
@@ -417,7 +417,7 @@ footer ul li {
         height: unset;
     }
 
-    .mid-header > * {
+    .mid-header>* {
         margin-top: 15px;
     }
 
@@ -438,7 +438,7 @@ footer ul li {
         padding: 10px 0;
     }
 
-    .mega-dropdown > a > i {
+    .mega-dropdown>a>i {
         display: none;
     }
 
@@ -457,7 +457,7 @@ footer ul li {
         margin: unset;
     }
 
-    .mega-content ul > li > a {
+    .mega-content ul>li>a {
         padding: 5px 0;
     }
 
@@ -466,13 +466,7 @@ footer ul li {
     }
 
     .hero {
-        height: calc(
-            80vh -
-                (
-                    var(--top-header-size) + var(--mid-header-size) +
-                        var(--bottom-header-size)
-                )
-        );
+        height: calc(80vh - (var(--top-header-size) + var(--mid-header-size) + var(--bottom-header-size)));
         margin-bottom: 60px;
     }
 
@@ -480,12 +474,12 @@ footer ul li {
         flex-direction: column-reverse;
     }
 
-    .slide > .info,
-    .slide > .img {
+    .slide>.info,
+    .slide>.img {
         width: 100%;
     }
 
-    .slide > .img > img {
+    .slide>.img>img {
         max-width: 300px;
     }
 
@@ -554,7 +548,7 @@ footer ul li {
     .filter-col.active {
         left: 0;
         width: 100%;
-        top:0px;
+        top: 0px;
         height: 100%;
         background-color: black;
     }
@@ -563,18 +557,12 @@ footer ul li {
         justify-content: center;
     }
 
-   
+
 }
 
 @media only screen and (max-width: 750px) {
     .hero {
-        height: calc(
-            70vh -
-                (
-                    var(--top-header-size) + var(--mid-header-size) +
-                        var(--bottom-header-size)
-                )
-        );
+        height: calc(70vh - (var(--top-header-size) + var(--mid-header-size) + var(--bottom-header-size)));
         margin-bottom: 60px;
     }
 
@@ -583,7 +571,7 @@ footer ul li {
         font-size: 40px;
     }
 
-    .line{
+    .line {
         width: 80vmin;
     }
 
