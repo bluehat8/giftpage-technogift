@@ -4,32 +4,38 @@
     .navbar{
         padding: 0;
     }
+
+    .navbar.abajo{
+        padding: 2.5rem;        
+    }
     .logo{
         position: absolute;
-        top:30px;
+        top:0px;
         left: 30px;
     }
     .nav-links{
+        position: absolute;
+        top:-10px;
+        margin-left: -10%;
+       
+        padding: 0;
         flex-direction: column;
-        width: 100%;
+        width: 110%;
         height: 100vh;
         justify-content: center;
         background-color: rgb(2, 1, 9);
-        margin-top: -900px;
-
-        transition: all 0.5s ease;
-        
+        margin-top: -1000px;
+        transition: all 0.5s ease;        
     }
 
     .mobile-menu{
-        margin-top: 0;
-        border-bottom-right-radius: 30%;
+        margin-top: 0;     
     }
 
     
 
     .nav-links li{
-        margin: 30px auto;
+        margin: 10px auto;
     }
 
     .nav-links img{

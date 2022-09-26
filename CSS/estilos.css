@@ -12,7 +12,6 @@ body {
 
 :root {
     scroll-behavior: smooth;
-
 }
 
 .active {
@@ -47,14 +46,25 @@ ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 20px;
     color: whitesmoke;
+    z-index: 99999;
+    transition: 0.8s ease-in-out;
+    padding: 0px 20px;
+}
+
+.navbar.abajo{
+background: rgba(25, 34, 42, 0.25);
+box-shadow: 0 0 1px rgb(22, 60, 85);
+backdrop-filter: blur(20px);
+border: 1px solid rgba(31, 47, 63, 0.25);
+-webkit-backdrop-filter: blur( 20px );
+padding: 10px 20px;
+scroll-behavior: smooth;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-
 }
 
 .nav-links a {
@@ -623,7 +633,6 @@ nav .nav-links .sidebar-logo .bx-x {
     align-items: center;
     display: flex;
     justify-content: center;
-
     justify-content: center;
 
 }
@@ -651,6 +660,10 @@ nav .nav-links .sidebar-logo .bx-x {
     width: 50%;
     height: 55%;
 }
+
+/*.box-commentary:hover ~ .commentary-img{
+   backdrop-filter: blur(30px);
+}*/
 
 
 /*textos*/
