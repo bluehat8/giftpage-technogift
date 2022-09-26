@@ -40,7 +40,7 @@ ul {
 
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -49,17 +49,18 @@ ul {
     color: whitesmoke;
     z-index: 99999;
     transition: 0.8s ease-in-out;
-    padding: 0px 20px;
+    padding: 0px 25px;
+    border-bottom: 1px solid rgba(31, 47, 63, 0);
 }
 
-.navbar.abajo{
-background: rgba(25, 34, 42, 0.25);
-box-shadow: 0 0 1px rgb(22, 60, 85);
-backdrop-filter: blur(20px);
-border: 1px solid rgba(31, 47, 63, 0.25);
--webkit-backdrop-filter: blur( 20px );
-padding: 10px 20px;
-scroll-behavior: smooth;
+.navbar.abajo {
+    background: rgba(25, 34, 42, 0.25);
+    box-shadow: 0 0 1px rgb(22, 60, 85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(31, 47, 63, 0.25);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 5px 5px;
+    scroll-behavior: smooth;
 }
 
 .nav-links {
@@ -70,8 +71,6 @@ scroll-behavior: smooth;
 .nav-links a {
     margin: 0 25px;
 }
-
-
 
 /*Menu desplegable vertical*/
 
@@ -314,12 +313,11 @@ nav .nav-links .sidebar-logo .bx-x {
 
 }
 
-/*.contenedor-galeria{
-    justify-content:space-evenly;
+/* .contenedor-galeria {
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-
-}*/
+} */
 
 
 .contenedor-servicio {
@@ -330,8 +328,9 @@ nav .nav-links .sidebar-logo .bx-x {
     color: white;
     background-color: #061319;
     border-radius: 25px;
-    box-shadow: 2px 2px 4px #006B91;
+    /* box-shadow: 10px 10px 10px #006B91; */
     z-index: -1;
+    padding: 35px;
 }
 
 .contenedor-servicio img {
@@ -339,9 +338,9 @@ nav .nav-links .sidebar-logo .bx-x {
     width: 50%;
     height: 100%;
     margin-right: 0px;
-    right: 13px;
+    right: 15px;
     display: block;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 25px;
 }
 
 .checklist-servicio {
@@ -350,19 +349,17 @@ nav .nav-links .sidebar-logo .bx-x {
 
 .service {
     margin-bottom: 20px;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .n-service {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     color: white;
-
 }
 
 .number {
     display: inline-block;
     background-image: linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
-    ;
     width: 30px;
     height: 30px;
     color: white;
@@ -370,10 +367,8 @@ nav .nav-links .sidebar-logo .bx-x {
     border-radius: 50%;
     font-weight: 700;
     line-height: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
-
-
 
 .contenedor-galeria {
     display: flex;
@@ -381,7 +376,6 @@ nav .nav-links .sidebar-logo .bx-x {
     flex-wrap: wrap;
     /*position: relative;*/
     align-items: center;
-
 }
 
 .img-galeria {
@@ -408,14 +402,10 @@ nav .nav-links .sidebar-logo .bx-x {
 
 /*contenedor imagenes pequeñas**/
 
-
-
-
-
 .contenedor-imagen {
     margin-top: 50px;
     margin-right: 0px;
-    width: 30%;
+    width: 37.5%;
     height: 100%;
     margin-bottom: 15px;
     cursor: pointer;
@@ -423,25 +413,15 @@ nav .nav-links .sidebar-logo .bx-x {
     align-items: center;
     display: flex;
     justify-content: center;
-    border-radius: 6px;
     transform: .5s;
-
-
 }
-
-
 
 .contenedor-imagen:hover .txt {
     transition: .5s;
-
     bottom: 50%;
 }
 
-
-
-
 .img-galeria1 {
-
     width: 100%;
     display: block;
     margin-bottom: 15px;
@@ -450,7 +430,7 @@ nav .nav-links .sidebar-logo .bx-x {
     cursor: pointer;
     align-items: center;
     filter: brightness(0.9);
-    border-radius: 6px;
+    border-radius: 20px;
 
     border: 1px solid rgb(30, 28, 28);
 
@@ -517,8 +497,6 @@ nav .nav-links .sidebar-logo .bx-x {
     align-items: center;
     display: flex;
     justify-content: center;
-
-
 }
 
 .contenedor-imagen-grande:hover .txt-img-grande {
@@ -526,12 +504,7 @@ nav .nav-links .sidebar-logo .bx-x {
     bottom: 50%;
 }
 
-
-
-
-
 .img-grande-galeria {
-
     width: 100%;
     height: 100%;
     display: block;

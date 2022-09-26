@@ -3,43 +3,43 @@ let products = [
         name: 'JBL E55BT KEY BLACK',
         image1: './img/productos/earbuds_skullcandy.png',
         image2: './img/productos/earbuds_skullcandy.png',
-        old_price: '400',
-        curr_price: '300'
+        old_price: '$400',
+        curr_price: '$300'
     },
     {
         name: 'Audifonos Philips',
         image1: './img/productos/aud_bandaSujetadora.png',
         image2: './img/productos/aud_bandaSujetadora.png',
-        old_price: '400',
-        curr_price: '300'
+        old_price: '$400',
+        curr_price: '$300'
     },
     {
         name: 'JBL TUNE 750BTNC',
         image1: './img/productos/jbl_2.png',
         image2: './img/productos/jbl_2.png',
-        old_price: '400',
-        curr_price: '300'
+        old_price: '$400',
+        curr_price: '$300'
     },
     {
         name: 'JBL Horizon',
         image1: './img/productos/apple.png',
         image2: './img/productos/apple.png',
-        old_price: '400',
-        curr_price: '300'
+        old_price: '$400',
+        curr_price: '$300'
     },
     {
         name: 'JBL Tune 220TWS',
         image1: './img/productos/realme_buds.png',
         image2: './img/productos/realme_buds.png',
-        old_price: '400',
-        curr_price: '300'
+        old_price: '$400',
+        curr_price: '$300'
     },
     {
         name: 'UA Project Rock',
         image1: './img/productos/sony_bluetooh.png',
         image2: './img/productos/sony_bluetooh.png',
-        old_price: '400',
-        curr_price: '300'
+        old_price: '$400',
+        curr_price: '$300'
     },
 ]
 
