@@ -1,5 +1,6 @@
 // Get the modal
 var modal1 = document.getElementById("myModal");
+var modalContent=document.getElementById("modal-content");
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn");
@@ -10,17 +11,27 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
   modal1.style.display = "block";
+  modal1.style.visibility = "visible";
+  modal1.style.width = "100%";
+  modalContent.style.margin="0% 40%";
+  modalContent.style.width="60%";
+
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal1.style.display = "none";
+  modal1.style.visibility = "hidden";
+  modalContent.style.margin="0% 100%";
+  modalContent.style.width="0%";
+
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal1) {
-    modal1.style.display = "none";
+    modal1.style.visibility = "hidden";
+    modalContent.style.margin="0% 100%";
+    modalContent.style.width="0%";
   }
 }
 
@@ -28,6 +39,9 @@ window.onclick = function(event) {
 var span_close = document.getElementsById("close");
 span_close.onclick = function() {
   modal1.style.display = "none";
+  modal1.style.visibility = "hidden";
+  modalContent.style.margin="0% 100%";
+  modalContent.style.width="0%";
 }
 
 
