@@ -22,7 +22,7 @@ btn1.onclick = function() {
 span.onclick = function() {
   modal1.style.visibility = "hidden";
   modalContent.style.margin="0% 100%";
-  modalContent.style.width="0%";
+  modalContent.style.width="100%";
 
 }
 
@@ -31,7 +31,8 @@ window.onclick = function(event) {
   if (event.target == modal1) {
     modal1.style.visibility = "hidden";
     modalContent.style.margin="0% 100%";
-    modalContent.style.width="0%";
+    modalContent.style.width="100%";
+
   }
 }
 
@@ -41,7 +42,7 @@ span_close.onclick = function() {
   modal1.style.display = "none";
   modal1.style.visibility = "hidden";
   modalContent.style.margin="0% 100%";
-  modalContent.style.width="0%";
+  modalContent.style.width="100%";
 }
 
 
