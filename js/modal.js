@@ -32,6 +32,7 @@ window.onclick = function(event) {
     modal1.style.visibility = "hidden";
     modalContent.style.margin="0% 100%";
     modalContent.style.width="0%";
+    /////
   }
 }
 
