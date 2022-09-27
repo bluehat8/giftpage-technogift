@@ -63,6 +63,11 @@ ul {
     scroll-behavior: smooth;
 }
 
+.navbar.abajo .menu-vertical{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur( 20px ); 
+}
+
 .nav-links {
     display: flex;
     align-items: center;

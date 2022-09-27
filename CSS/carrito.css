@@ -1094,7 +1094,6 @@ footer ul li {
     top: -4px;
     width: 22px;
     height: 22px;
-    background-color: var(--main-bg-color);
     border: 2px solid #7b7979;
 }
 
@@ -1102,11 +1101,18 @@ footer ul li {
     position: absolute;
     left: 2px;
     top: -2px;
-    color: var(--black);
+    color: var(--grey);
     transform: scale(0);
     font-size: 21px;
     transition: transform 0.1s ease-in-out;
 }
+
+i{
+    color:#006EA3;
+}
+
+
+
 
 .group-checkbox input:checked + label i {
     transform: scale(1);

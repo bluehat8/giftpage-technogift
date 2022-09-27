@@ -941,7 +941,7 @@ footer ul li {
     position: absolute;
     left: 2px;
     top: -2px;
-    color: var(--black);
+    color: seagreen;
     transform: scale(0);
     font-size: 21px;
     transition: transform 0.1s ease-in-out;
