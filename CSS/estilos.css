@@ -6,8 +6,40 @@
 
 body {
     font-family: 'Poppins';
-    background: #060B0E;
+    background: #020200;
+    transition:  1s ease-in-out;
+ 
 }
+
+  body::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+    transition:  1s ease-in-out;
+
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #020200;        /* color of the tracking area */
+    transition:  1s ease-in-out;
+
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #808080;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    height: 200px;
+    border: 3px solid #020200;  /* creates padding around scroll thumb */
+    transition:  1s ease-in-out;
+
+  }
+
+
+  body::-webkit-scrollbar-thumb:hover {
+    /*background: #00E676;   */ /* color of the scroll thumb */
+    background:linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
+
+  }
+
+  
 
 
 :root {
@@ -55,7 +87,7 @@ ul {
     color: whitesmoke;
     z-index: 99999;
     transition: 0.8s ease-in-out;
-    border: 1px solid rgba(31, 47, 63, 0);
+    border-bottom: 1px solid rgba(31, 47, 63, 0);
     padding: 0px 20px;
 }
 
@@ -63,7 +95,7 @@ ul {
 background: rgba(25, 34, 42, 0.25);
 box-shadow: 0 0 1px rgb(22, 60, 85);
 backdrop-filter: blur(20px);
-border: 1px solid rgba(31, 47, 63, 0.25);
+border-bottom: 1px solid rgba(31, 47, 63, 0.25);
 -webkit-backdrop-filter: blur( 20px );
 padding: 5px 5px;
 scroll-behavior: smooth;

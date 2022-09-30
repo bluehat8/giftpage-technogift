@@ -1,4 +1,5 @@
 .modal{
+
     /*display: none;*/ /* Hidden by default */
     visibility: hidden;
     position: fixed; /* Stay in place */
@@ -7,35 +8,52 @@
     top: 0px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    border-radius: 20px;
+    overflow-y: auto; /* Enable scroll if needed */
     justify-content: center;
-    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: 0.8s ease;
-    transition-delay: 8ms;
+    backdrop-filter: blur(0px);
     overflow-x: hidden;
+    /*opacity: 1;*/
+    transition:  0.8s;
+
 
 }
+
+.modal::-webkit-scrollbar {
+  width: 13px;               /* width of the entire scrollbar */
+}
+
+.modal::-webkit-scrollbar-track {
+  background: #0E0E0E;        /* color of the tracking area */
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #808080;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  height: 100px;
+  border: 3px solid #0E0E0E;  /* creates padding around scroll thumb */
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #00E676;    /* color of the scroll thumb */
+}
+
 
 
 
 
 /* Modal Content/Box */
 .modal-content {
-    
     background: white;
     position: absolute;
-/* Note: backdrop-filter has minimal browser support */
-
     margin: 0 100%; /* 15% from the top and centered */
-    padding: 30px;
+    padding: 50px;
     border: 1px solid #888;
     justify-content: center;
     color: black;
-    width: 0%; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 200vh;
+    transition: 0.8s ease;
+    transition-delay: 8ms;
   }
 
   #modal-content{
