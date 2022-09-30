@@ -31,7 +31,7 @@ footer ul li {
 }
 
 .contact-socials a:hover {
-    color: #006B91;
+    color: var(--btn-color);
 }
 
 .menu li a {

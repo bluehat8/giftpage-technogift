@@ -22,7 +22,7 @@ btn1.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal1.style.visibility = "hidden";
   modal1.style.backdropFilter="blur(0px)";
   modal1.style.overflowY="hidden";
@@ -33,7 +33,7 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal1) {
     modal1.style.visibility = "hidden";
     modal1.style.overflowY="hidden";
@@ -47,11 +47,11 @@ window.onclick = function(event) {
 
 // Get the <span> element that closes the modal
 var span_close = document.getElementsById("close");
-span_close.onclick = function() {
+span_close.onclick = function () {
   modal1.style.display = "none";
   modal1.style.visibility = "hidden";
-  modalContent.style.margin="0% 100%";
-  modalContent.style.width="100%";
+  modalContent.style.margin = "0% 100%";
+  modalContent.style.width = "100%";
 }
 
 
@@ -65,17 +65,17 @@ var btn3 = document.getElementById("myBtn3");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn3.onclick = function() {
+btn3.onclick = function () {
   modal2.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal2.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal2) {
     modal2.style.display = "none";
   }
@@ -83,6 +83,6 @@ window.onclick = function(event) {
 
 // Get the <span> element that closes the modal
 var span_close = document.getElementsById("close");
-span_close.onclick = function() {
+span_close.onclick = function () {
   modal1.style.display = "none";
 }

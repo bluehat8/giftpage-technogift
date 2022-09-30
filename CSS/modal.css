@@ -56,24 +56,33 @@
     transition-delay: 8ms;
   }
 
-  #modal-content{
-    transition: 0.8s ease;
-    transition-delay: 8ms;
+.modal-content h3 {
+  font-size: 24px;
+  margin-top: 25px;
+}
 
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    margin:-30px 2px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    cursor: pointer;
-  }
+.modal-content p {
+  font-size: 16px;
+}
+
+#modal-content {
+  transition: 0.8s ease;
+  transition-delay: 8ms;
+}
+
+/* The Close Button */
+.close {
+  color: rgb(115, 115, 115);
+  float: right;
+  display: flex;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -43,7 +43,6 @@ body {
 
 :root {
     scroll-behavior: smooth;
-
 }
 
 .active {
@@ -56,11 +55,6 @@ body {
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
-}
-    
-
-ul{
-    list-style:none;
 }
 
 
@@ -76,10 +70,10 @@ ul {
 
 
 
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -102,7 +96,15 @@ scroll-behavior: smooth;
 
 .navbar.abajo .menu-vertical{
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur( 20px ); 
+    border-bottom: 1px solid rgba(31, 47, 63, 0.25);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 5px 5px;
+    scroll-behavior: smooth;
+}
+
+.navbar.abajo .menu-vertical {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .nav-links {
@@ -121,11 +123,10 @@ scroll-behavior: smooth;
 
 /*Menu desplegable vertical*/
 
-.nav-links{
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-    
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav-links>li>a {
@@ -156,23 +157,12 @@ scroll-behavior: smooth;
 /*.nav-links > li:hover{
 	background-color: red;
 }*/
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 200px;
-	background: rgba(25, 34, 42, 0.5);
-    box-shadow: 0 0 1px rgb(22, 60, 85);
-    backdrop-filter: blur( 100px );
-    border: 1px solid rgba(31, 47, 63, 0.25);
-    -webkit-backdrop-filter: blur( 100px );
-}
-.nav-links li:hover .menu-vertical{
-	display: block;
-}
-.menu-vertical li:hover{
-	background-color: rgba(0, 135, 165, 0.5);
-    -webkit-backdrop-filter: blur( 40px );
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(6, 16, 20, 1);
 }
 
 .nav-links li:hover .menu-vertical {
@@ -195,7 +185,7 @@ scroll-behavior: smooth;
 
 /* end navbar*/
 
-header{
+header {
     width: 100%;
     height: 100vh;
     background-image: url('../img/portada.png');
@@ -356,9 +346,7 @@ nav .nav-links .sidebar-logo .bx-x {
     font-size: 18px;
     border-radius: 50px;
     background: linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
-    border-color:transparent;
+    border-color: transparent;
     color: white;
     padding: 15px 70px;
     text-decoration: none;
@@ -392,12 +380,11 @@ nav .nav-links .sidebar-logo .bx-x {
 
 }
 
-/*.contenedor-galeria{
-    justify-content:space-evenly;
+/* .contenedor-galeria {
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-
-}*/
+} */
 
 
 .contenedor-servicio {
@@ -408,8 +395,9 @@ nav .nav-links .sidebar-logo .bx-x {
     color: white;
     background-color: #061319;
     border-radius: 25px;
-    box-shadow: 2px 2px 4px #006B91;
+    /* box-shadow: 10px 10px 10px #006B91; */
     z-index: -1;
+    padding: 35px;
 }
 
 .contenedor-servicio img {
@@ -417,9 +405,9 @@ nav .nav-links .sidebar-logo .bx-x {
     width: 50%;
     height: 100%;
     margin-right: 0px;
-    right: 13px;
+    right: 15px;
     display: block;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 25px;
 }
 
 .checklist-servicio {
@@ -428,19 +416,17 @@ nav .nav-links .sidebar-logo .bx-x {
 
 .service {
     margin-bottom: 20px;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .n-service {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     color: white;
-
 }
 
 .number {
     display: inline-block;
     background-image: linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
-    ;
     width: 30px;
     height: 30px;
     color: white;
@@ -448,10 +434,8 @@ nav .nav-links .sidebar-logo .bx-x {
     border-radius: 50%;
     font-weight: 700;
     line-height: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
-
-
 
 .contenedor-galeria {
     display: flex;
@@ -459,7 +443,6 @@ nav .nav-links .sidebar-logo .bx-x {
     flex-wrap: wrap;
     /*position: relative;*/
     align-items: center;
-
 }
 
 .img-galeria {
@@ -486,14 +469,10 @@ nav .nav-links .sidebar-logo .bx-x {
 
 /*contenedor imagenes pequeñas**/
 
-
-
-
-
 .contenedor-imagen {
     margin-top: 50px;
     margin-right: 0px;
-    width: 30%;
+    width: 37.5%;
     height: 100%;
     margin-bottom: 15px;
     cursor: pointer;
@@ -501,25 +480,15 @@ nav .nav-links .sidebar-logo .bx-x {
     align-items: center;
     display: flex;
     justify-content: center;
-    border-radius: 6px;
     transform: .5s;
-
-
 }
-
-
 
 .contenedor-imagen:hover .txt {
     transition: .5s;
-
     bottom: 50%;
 }
 
-
-
-
 .img-galeria1 {
-
     width: 100%;
     display: block;
     margin-bottom: 15px;
@@ -528,7 +497,7 @@ nav .nav-links .sidebar-logo .bx-x {
     cursor: pointer;
     align-items: center;
     filter: brightness(0.9);
-    border-radius: 6px;
+    border-radius: 20px;
 
     border: 1px solid rgb(30, 28, 28);
 
@@ -538,11 +507,6 @@ nav .nav-links .sidebar-logo .bx-x {
 .img-galeria1:hover {
     transition: all .5s ease-in;
     filter: brightness(0.7);
-    ;
-
-
-
-
 }
 
 .txt {
@@ -554,9 +518,6 @@ nav .nav-links .sidebar-logo .bx-x {
     /*background-color: white;*/
     font-size: 32px;
     transition: .5s;
-
-
-
 }
 
 
@@ -595,8 +556,6 @@ nav .nav-links .sidebar-logo .bx-x {
     align-items: center;
     display: flex;
     justify-content: center;
-
-
 }
 
 .contenedor-imagen-grande:hover .txt-img-grande {
@@ -604,12 +563,7 @@ nav .nav-links .sidebar-logo .bx-x {
     bottom: 50%;
 }
 
-
-
-
-
 .img-grande-galeria {
-
     width: 100%;
     height: 100%;
     display: block;
@@ -715,12 +669,7 @@ nav .nav-links .sidebar-logo .bx-x {
 
 }
 
-.contenedor-reseñas img:hover {
--webkit-backdrop-filter: blur(30px);
-filter:brightness(60%);
-}
-
-.opiniones{
+.opiniones {
     text-align: center;
     color: white;
     margin-bottom: 15px;
