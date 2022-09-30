@@ -36,7 +36,6 @@ body {
   body::-webkit-scrollbar-thumb:hover {
     /*background: #00E676;   */ /* color of the scroll thumb */
     background:linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
-
   }
 
   
@@ -117,6 +116,9 @@ scroll-behavior: smooth;
 
 
 
+
+
+
 /*Menu desplegable vertical*/
 
 .nav-links{
@@ -129,9 +131,27 @@ scroll-behavior: smooth;
 .nav-links>li>a {
     display: block;
     padding: 15px 20px;
-    color: white;
+    
     text-decoration: none;
 }
+
+.nav-links li:nth-child(3){
+    border: none;
+    border-radius: 5px;
+    background: rgb(0, 255, 221,0.1); 
+    transition: 0.4s ease-in-out;
+}
+
+.nav-links li:nth-child(3):hover{
+    background: rgb(0, 255, 221,0.2); 
+
+}
+
+.text-contact{
+    color:#00E0AB; 
+}
+
+
 
 /*.nav-links > li:hover{
 	background-color: red;
