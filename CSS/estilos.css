@@ -63,9 +63,9 @@ ul {
     scroll-behavior: smooth;
 }
 
-.navbar.abajo .menu-vertical{
+.navbar.abajo .menu-vertical {
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur( 20px ); 
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .nav-links {
@@ -445,11 +445,6 @@ nav .nav-links .sidebar-logo .bx-x {
 .img-galeria1:hover {
     transition: all .5s ease-in;
     filter: brightness(0.7);
-    ;
-
-
-
-
 }
 
 .txt {
@@ -461,9 +456,6 @@ nav .nav-links .sidebar-logo .bx-x {
     /*background-color: white;*/
     font-size: 32px;
     transition: .5s;
-
-
-
 }
 
 
