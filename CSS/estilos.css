@@ -4,9 +4,24 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    --gray-color:  #808080; 
+    --black-background2:#0e0e10;
+    --black-background3:#23233B;
+
+    --black-background:#020200; 
+    --green-color: #4dc4be;
+    --white-color: #ffff;
+    --red-color: #ee436d;
+
+    --green-color2: #00E0AB;
+
+}
+
 body {
     font-family: 'Poppins';
-    background: #020200;
+    background: var(--black-background);
     transition:  1s ease-in-out;
  
 }
@@ -18,16 +33,16 @@ body {
   }
   
   body::-webkit-scrollbar-track {
-    background: #020200;        /* color of the tracking area */
+    background: var(--black-background);       /* color of the tracking area */
     transition:  1s ease-in-out;
 
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #808080;    /* color of the scroll thumb */
+    background-color: var(--gray-color);   /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     height: 200px;
-    border: 3px solid #020200;  /* creates padding around scroll thumb */
+    border: 3px solid var(--black-background); /* creates padding around scroll thumb */
     transition:  1s ease-in-out;
 
   }
@@ -81,7 +96,7 @@ ul {
     z-index: 99999;
     transition: 0.8s ease-in-out;
     border-bottom: 1px solid rgba(31, 47, 63, 0);
-    padding: 0px 20px;
+    padding: 0px 40px;
 }
 
 .navbar.abajo{
@@ -90,7 +105,7 @@ box-shadow: 0 0 1px rgb(22, 60, 85);
 backdrop-filter: blur(20px);
 border-bottom: 1px solid rgba(31, 47, 63, 0.25);
 -webkit-backdrop-filter: blur( 20px );
-padding: 5px 5px;
+padding: 5px 30px;
 scroll-behavior: smooth;
 }
 
@@ -132,25 +147,31 @@ scroll-behavior: smooth;
 .nav-links>li>a {
     display: block;
     padding: 15px 20px;
-    
     text-decoration: none;
+    transition: 0.5s ease-in-out;
 }
 
-.nav-links li:nth-child(3){
+.nav-links>li>a:hover{
+ color:var(--green-color);
+}
+
+/*.nav-links li:nth-child(3){
     border: none;
     border-radius: 5px;
-    background: rgb(0, 255, 221,0.1); 
+    background:  rgba(54, 201, 169, 0.1);;
+    backdrop-filter: blur(30px); 
+    -webkit-backdrop-filter: blur(30px);
     transition: 0.4s ease-in-out;
 }
 
 .nav-links li:nth-child(3):hover{
     background: rgb(0, 255, 221,0.2); 
 
-}
+}*/
 
-.text-contact{
-    color:#00E0AB; 
-}
+/*.text-contact{
+    color: var(--green-color); 
+}*/
 
 
 
@@ -194,7 +215,8 @@ header {
     background-attachment: fixed;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
+    
 }
 
 a {
@@ -203,18 +225,45 @@ a {
 }
 
 .header-content {
-    margin-bottom: 300px;
+    margin-bottom: 16rem;
     color: white;
-    text-align: center;
+    margin-left: 5rem;
+    margin-right: 3rem;
 }
 
 .header-content h2 {
-    font-size: 5.4vmin;
-    margin-bottom: 40px;
+    font-size: 3.5vmin;
+    margin-bottom: 2px;
+}
+
+.header-content p{
+    margin-bottom: 2.5rem;
+    width: 40%;
+    font-size: 2vmin;
 }
 
 .span-text-header {
-    color: rgba(54, 201, 169, 1);
+    /*color: var(--green-color2);*/
+    text-shadow: 0 0 0 10px var(--green-color);
+    -webkit-text-stroke: 1px #FFFFFF;
+}
+
+.span-text-header {
+    font-size: 8vmin;
+    font-weight: 900;
+    color:transparent;
+    -webkit-text-stroke: 1px var(--green-color2);
+    background: url('../img/back-green-gauss.png');
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 24s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
 }
 
 .line {
@@ -344,11 +393,11 @@ nav .nav-links .sidebar-logo .bx-x {
 .botonInicio {
     font-weight: 400;
     font-size: 18px;
-    border-radius: 50px;
+    border-radius: 10px;
     background: linear-gradient(278.93deg, #00E0AB -34.41%, #006EA3 114.58%);
     border-color: transparent;
     color: white;
-    padding: 15px 70px;
+    padding: 15px 65px;
     text-decoration: none;
     transition: 0.5s;
 
@@ -393,7 +442,7 @@ nav .nav-links .sidebar-logo .bx-x {
     align-items: center;
     flex-wrap: wrap;
     color: white;
-    background-color: #061319;
+    background-color: var(--black-background2);
     border-radius: 25px;
     /* box-shadow: 10px 10px 10px #006B91; */
     z-index: -1;
