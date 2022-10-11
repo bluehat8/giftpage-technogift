@@ -51,7 +51,7 @@
     justify-content: center;
     color: black;
     width: 100%; /* Could be more or less, depending on screen size */
-    height: 200vh;
+    height: 300vh;
     transition: 0.8s ease;
     transition-delay: 8ms;
   }
