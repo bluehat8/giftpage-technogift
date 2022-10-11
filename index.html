@@ -19,16 +19,20 @@
         href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <script src="jquery-1.3.2.min.js" type="text/javascript"></script>   
+
 </head>
 
 <body>
+    <script src="https://kit.fontawesome.com/ceb3ebf92c.js" crossorigin="anonymous"></script>
+
         <!--Navbar-->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <img class="logo" src="img/logo.png"></img>
             <ul class="nav-links">
                 <li><a class="active" href="#">Inicio</a></li>
                 <li>
-                    <a href="#">Categorías</a>
+                    <a  href="#">Categorías</a>
                     <ul class="menu-vertical">
                         <li><a href="catalogo-personalizable.html">Promociones</a></li>
                         <li><a href="catalogo-portatil.html">Portátiles</a></li>
@@ -39,21 +43,89 @@
                         <li><a href="catalogo-accesorio.html">Accesorios</a></li>
                     </ul>
                 </li>
-                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a class="text-contact" href="contacto.html">Contáctanos</a></li>
                 <li><a id="myBtn"  href="#myModal">FAQ</a></li>
                 <!--<img onclick="window.location.href='carrito.html'" src="img/Icons/cart.svg" alt="" class="img-icons">-->
                 <img src="img/Icons/searchIcon.svg" alt="" class="img-icons">
-                <img onclick="window.location.href='login.html'" src="img/Icons/user.png" alt="" class="img-icons">
+                <!--<img onclick="window.location.href='login.html'" src="img/Icons/user.png" alt="" class="img-icons">-->
        
             </ul>
        
-            <img  src="img/hamburguer.png"  alt="" class="menu-btn">
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             
         </nav>
+
+
+        <div id="container-menu" class="container-menu">
+            <div id="cont-menu" class="cont-menu">
+                <nav>
+                    
+                    <div class="normal-nav">
+                        <a href="#">Inicio</a>
+
+                    </div>
+                            <a id="navLink" href="#" class="nav__link">Categorías</a>
+        
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="catalogo-personalizable.html">Promociones</a>
+                            </li>
+        
+                            <li class="list__inside">
+                                <a href="catalogo-portatil.html">Portátiles</a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-audifono.html">Audífonos</a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-gamers.html">Gamers</a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-programadores.html"><p>Programadores</p></a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-moviles.html">Móviles</a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-accesorio.html">Accesorios</a>
+                            </li>
+                        </ul>
+        
+                    </li>
+
+                   
+                    <div class="normal-nav">
+                        <a href="#">Contáctanos</a>
+                    </div>
+
+                    <div class="normal-nav">
+                        <a id="myBtn"  href="#myModal">FAQ</a>
+
+                    </div>
+                    
+                </nav>
+                <div id="closeIcon" class="closeIcon">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!--<label for="btn-menu">✖️</label>-->
+            </div>
+        </div>
        
                <header>
                    <div class="header-content">
-                       <h2>BIENVENIDO A <span class="span-text-header">TECHNO GIFT</span> </h2>
+                       <h2>BIENVENIDO A <span class="span-text-header">TECHNOGIFT</span>  </h2>
+                       <p>Lorem ipsum, Inventore libero, omnis maiores minima
+                        ex,
+                        facere quam eveniet ducimus aspernatur vitae iste nam, non laboriosam. Laboriosam illum
+                        repellendus
+                        laborum hic iste.</p>
                        <!--<div class="line"></div>-->
                      <!---  <div class="contenedor">
                            <div class="box">
@@ -77,16 +149,24 @@
 
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div id="modal-content" class="modal-content">
+                <span class="close">&times;</span>
                 <div class="modal-header">
-                    <h3 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes</h5>
-                        <span class="close">&times;</span>
+                    <h2 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes</h5>
+
                 </div>
                 <class class="modal-body">
                     <div>
-                        <h3>¿Qué es TECHNO GIFT?</h5>
-                            <p>technogift.com es una tienda de regalos tecnológicos </p>
+                        <h3>¿Qué es TECHNO GIFT?</h3>
+                        <p>technogift.com es una tienda de regalos tecnológicos </p>
 
-                            <br>
+                        <h3>¿Qué puedo hacer aquí?</h3>
+                        <p>En technogift.com podra realizar compras de regalos tecnológicos</p>
+                        
+                        <h3>¿Cómo puedo comprar un regalo?</h3>
+                        <p>Es tan sencillo como ir a la página principal, dar click en el componente
+                            CONTÁCTANOS
+                            de la barra de navegación y rellenar los campos con la información solicitada.
+                        </p>
 
                             <h3>¿Qué puedo hacer aquí?</h5>
                                 <p>En technogift.com podra realizar compras de regalos tecnológicos
@@ -96,43 +176,23 @@
 
                                 <h3>¿Cómo puedo comprar un regalo?</h5>
                                     <p>Es tan sencillo como ir a la página principal, dar click en el componente
-                                        CONTÁCTANOS
-                                        de la barra de navegación y rellenar los campos con la información solicitada.
+                                        ffffffffffffffffffffffffffffffffffffffffffffffffff
+                                        fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
                                     </p>
 
 
-
-                                    <br>
-                                    <br>
-                                    <video preload="metadata" muted controls width="100%" height="auto"
-                                        style="text-align: center;">
-                                        <source src="Videos/howToCreateOffert.mp4">
-                                    </video>
-
-
-                                    <br>
-
-                                    <h3>¿Quiénes son los desarrolladores de este sitio web?</h5>
-                                        <p>Agustín Gustavo Amaya Soza | N.Carnet: 2018-1231U</p>
-                                        <p>Ricardo Antonio Morales | N.Carnet: 2018-1015U</p>
-                                        <p>Raquel Martínez | N.Carnet: 2018-1015U</p>
-                                        <p>Magaly Lizbeth Vega Ruiz| N.Carnet: 2018-1015U</p>
-
-
-                                        <br>
-
-                                        <h3>¿Cómo puedo contactar con el desarrollador?</h5>
-                                            <p>Puedes hacerlo por correo electronico
-                                                <a target="_blank"
-                                                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=agustin.amaya.g21@gmail.com&subject=Duda%20sobre%20ClinicaNarvaez">(Gmail)</a>
-                                                o puedes hacerlo por
-                                                <a target="_blank" href="https://www.facebook.com">Facebook</a>,
-                                                <a target="_blank" href="https://www.twitter.com">Twitter</a>,
-                                                <a target="_blank" href="https://www/instagram.com">Instagram</a>,
-                                                <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba"
-                                                    target="_blank">WhatsApp</a>
-                                                o <a target="_blank" href="https://t.me/agustinavello">Telegram</a>.
-                                            </p>
+                        <h3>¿Cómo puedo contactar con el desarrollador?</h3>
+                        <p>Puedes hacerlo por correo electronico
+                            <a target="_blank"
+                                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=agustin.amaya.g21@gmail.com&subject=Duda%20sobre%20ClinicaNarvaez">(Gmail)</a>
+                            o puedes hacerlo por
+                            <a target="_blank" href="https://www.facebook.com">Facebook</a>,
+                            <a target="_blank" href="https://www.twitter.com">Twitter</a>,
+                            <a target="_blank" href="https://www/instagram.com">Instagram</a>,
+                            <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba"
+                                target="_blank">WhatsApp</a>
+                            o <a target="_blank" href="https://t.me/agustinavello">Telegram</a>.
+                        </p>
                     </div>
                 </class>
             </div>
@@ -145,22 +205,18 @@
         <section class="contenedor" id="services">
             <h2 class="subtitulo"></h2>
             <div class="contenedor-servicio">
-
                 <img src="img/Background.png" alt="">
-
                 <div class="checklist-servicio">
                     <div class="service">
                         <h3 class="n-service"><span class="number">1</span>Personaliza tu regalo</h3>
                         <p>Somos expertos en personalizar.</p>
                     </div>
-
                     <div class="service">
                         <h3 class="n-service"><span class="number">2</span>Encuentra las mejores ofertas</h3>
                         <p>Descubre los mejores artìculos tecnològicos al mejor precio.</p>
                     </div>
-
                     <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Contáctanos</h3>
+                        <h3 class="n-service"><span class="number">3</span>Excelente servicio al cliente</h3>
                         <p>Contáctanos através de nuestras redes sociales o vía email</p>
                     </div>
                 </div>
@@ -168,16 +224,68 @@
         </section>
 
         <section class="gallery" id="portafolio">
-            <div class="contenedor">
+            
                 <h2 class="subtitulo">¿Buscas el TECHNO GIFT perfecto?</h2>
                 <h4 class="subtitulo2">¡Dejanos ayudarte con eso!</h4>
 
+                    <div class="contenedorImagen">
+                        <div class="item" onclick="window.location.href='catalogo-personalizable.html'">
 
-                <div class="contenedor-galeria">
+                            <div class="glass">
+                                <p>Personalizables</p>
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex,
+                                    facere quam eveniet ducimus aspernatur vitae iste nam, non laboriosam. Laboriosam illum
+                                    repellendus</h5>
+                            </div>
+                        </div>
+                        <div class="item2" onclick="window.location.href='catalogo-moviles.html'">
+                            <div class="glass">
+                                <p>Móviles</p> 
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex</h5>
+                            </div>
+                        </div>
+                        <div  class="item2" onclick="window.location.href='catalogo-portatil.html'">
+                            <div class="glass">
+                                <p>Portátiles</p> 
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex</h5>
+                            </div>
+                        </div>
+                        <div  class="item2" onclick="window.location.href='catalogo-gamers.html'">
+                            <div class="glass">
+                                <p>Gaming</p> 
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex</h5>
+                            </div>
+                        </div>
+                        <div class="item2" onclick="window.location.href='catalogo-audifono.html'">
+                            <div class="glass">
+                                <p>Audífonos</p>
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex</h5> 
+                            </div>
+                        </div>
+                        <div class="item2" onclick="window.location.href='catalogo-accesorio.html'">
+                            <div class="glass">
+                                <p>Accesorios</p> 
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex</h5>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div class="glass">
+                                <p>Programadores</p> 
+                                <h5>Lorem ipsum, Inventore libero, omnis maiores minima
+                                    ex</h5>
+                            </div>
+                        </div>
+
+                    </div>
 
 
-
-                    <div onclick="window.location.href='catalogo-audifono.html'" class="contenedor-imagen-grande">
+                    <!--<div onclick="window.location.href='catalogo-audifono.html'" class="contenedor-imagen-grande">
                         <img src="img/personalizar.png" alt="" class="img-grande-galeria"></img>
                         <div class="txt-img-grande">
                             <p>Personalizables</p>
@@ -228,9 +336,9 @@
                         <div class="txt-img-grande">
                             <p>Para Programadores</p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div>-->
+               
+           
         </section>
 
 
@@ -288,12 +396,10 @@
 
         <!--SECCIÓN DE RESEÑAS-->
         <section class="contenedor" id="reviews">
-         <p class="opiniones">Lo que opinan   <span class="otro-color" class="opiniones"> nuestros clientes</span></p>  
-         <div class="contenedor-reseñas">
-            <img id="commentary-image" src="img/bg-reviews.png" alt="" class="img-galeria1" ></img>
-            <div class="box-commentary" alt="">
-                
-                <div class="contenedor-comentarios">
+            <p class="opiniones">Lo que opinan <span class="otro-color" class="opiniones"> nuestros clientes</span></p>
+            <div class="contenedor-reseñas">
+                <img src="img/bg-reviews.png" alt="" class="img-galeria1"></img>
+                <div class="box-commentary" alt="">
 
                     <div class="contenedor-comentarios">
 
@@ -358,7 +464,8 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/8iGMU9s0Ld4"
                     title="Video tutorial technogift-Cómo comprar un producto" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
 
         </section>
@@ -431,6 +538,15 @@
             </div>
         </div>
     </footer>
+
+
+    <div class="top-container">
+            
+        <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+        <a href="#" class="top"><i class='bx bxl-whatsapp' ></i></a>
+
+
+    </div>
     <!--16:55-->
 
 
@@ -441,24 +557,56 @@
     <script>
         const menuBtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
-        menuBtn.addEventListener('click', () => {
-            navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
+        var lateralMenu= document.getElementById('container-menu');
+        var lateralMenuContent= document.getElementById('cont-menu');
+        const closeIcon= document.querySelector('.closeIcon');
+        var lstShow= document.querySelector('.list__show');
+        var menuVertical= document.getElementById('menu-vertical2');
+        var lstInside= document.querySelector('.list__inside');
 
-    <!--<script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var header=document.querySelector("nav");
-            header.classList.toggle("abajo",window.scrollY>0);     
-           // header.classList.toggle("negro",window.scrollY>1850);
-            //header.classList.toggle("negro",window.scrollY==section.clientHeight); 
-    })
-    </script>-->
+        document.getElementById('navLink').onclick = function() {
+        lstShow.classList.toggle('bajar');
+        lstInside.classList.toggle('bajar');
+        
+        }
+
+        menuBtn.addEventListener('click', () => {
+            //navlinks.classList.toggle('mobile-menu');
+            lateralMenu.style.opacity=1;
+            lateralMenu.style.visibility="visible";
+            lateralMenuContent.style.transform="translateX(0%)";
+
+        })
+
+        closeIcon.addEventListener('click', () => {
+            lateralMenuContent.style.transform="translateX(-100%)";
+            lateralMenu.style.opacity=0;
+            lateralMenu.style.visibility="hidden";
+        })
+
+        btnCategory.addEventListener('click', () => {
+          menuVertical.style.display="block";
+        })
 
     
+
+        window.onclick = function (event) {
+            if (event.target == lateralMenu){
+            lateralMenu.style.opacity=0;
+            lateralMenu.style.visibility="hidden";
+            lateralMenuContent.style.transform="translateX(-100%)";
+            }
+
+
+            
+        }
+
+    </script>
+
     <script src="js/modal.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/scroll.js"></script>
+
 </body>
 
 </html>
