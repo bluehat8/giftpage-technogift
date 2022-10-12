@@ -1,0 +1,209 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --gray-color:  #808080; 
+    --black-background2:#0e0e10;
+    --black-background4:#1d1d1e;
+
+    --black-background3:#23233B;
+    --black-background:#020200; 
+    --green-color-opacity: rgb(77, 196, 190,0.7);
+    
+    --green-color: rgb(77, 196, 190);
+    --dark-green-color: #008498;
+    --white-color: #ffff;
+    --red-color: #ee436d;
+    --green-color2: #00E0AB;
+
+}
+
+
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: -60px;
+    right: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 99999; /* Sit on top */
+    color:white;
+    transition: bottom 0.4s ease-out;
+
+}
+
+.collapsible {
+    background: linear-gradient(222.93deg, #00E0AB -31.41%, #006EA3 114.58%);
+    backdrop-filter: blur(30px);
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+.content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: rgba(25, 34, 42, 0.5);
+    box-shadow: 0 0 1px rgb(22, 60, 85);
+    border-bottom: 1px solid rgba(31, 47, 63, 0.25);
+    backdrop-filter: blur(50px);
+}
+
+.full-chat-block {
+    width: 350px;
+    background: none;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.4s ease-out;
+}
+
+.outer-container {
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+
+.chat-container {
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+.chat-bar-icons i{
+    color: var(--red-color);
+}
+
+#chat-icon:hover {
+    opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background-color: var(--green-color-opacity);
+    backdrop-filter: blur(100px);
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: white;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: var(--black-background4);
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 2px solid gray;
+        border-radius: 10px 10px 0 0;
+    }
+}

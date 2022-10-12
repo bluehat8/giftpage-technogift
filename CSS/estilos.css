@@ -9,13 +9,11 @@
     --gray-color:  #808080; 
     --black-background2:#0e0e10;
     --black-background3:#23233B;
-
     --black-background:#020200; 
     --green-color: #4dc4be;
     --dark-green-color: #008498;
     --white-color: #ffff;
     --red-color: #ee436d;
-
     --green-color2: #00E0AB;
 
 }
@@ -197,10 +195,24 @@ header {
     display: flex;
     align-items: flex-end;
     background-repeat: no-repeat;
-    backdrop-filter:  brightness(0.9);
-    background-color: #0f0f10;
     object-fit: contain;
-    
+    transition: opacity 20s ease;
+    animation: banner 20s infinite linear alternate;
+}
+
+
+@keyframes banner {
+    0%, 20%{
+    background-image: url('../img/main-bg.webp');
+    }
+    25%, 45%{
+        background-image: url('../img/portada.png');    } 
+    50%, 70%{
+    background-image: url('../img/main-bg3.webp');
+    }
+    75%, 100%{
+    background-image: url('../img/main-bg4.webp');
+    }
 }
 
 a {
@@ -1356,8 +1368,23 @@ footer {
 
 .top:nth-child(2) {
     bottom: 5.1rem;
+
 }
 
+#btnBot i{
+    /*animation: cambiarColor 5s infinite;*/
+    cursor: pointer;
+}
+
+@keyframes cambiarColor {   
+    0%{
+        filter:hue-rotate(215deg);
+
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+ }
 
 
 @media (max-width:964px){
