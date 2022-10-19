@@ -1,0 +1,124 @@
+:root{
+    --gray-color:  #808080; 
+    --black-background2:#0e0e10;
+    --black-background5:rgba(14, 14, 16, 0.247);
+    --black-background3:#23233B;
+    --black-background:#020200; 
+    --black-background4:#5d1919; 
+    --green-color: #4dc4be;
+    --dark-green-color: #008498;
+    --white-color: #ffff;
+    --red-color: #ee436d;
+    --green-color2: #00E0AB;
+    --blue-color: rgb(0, 110, 163);
+
+}
+
+
+/*Buscador de contenido*/
+
+#ctn-icon-search{
+    position: absolute;
+    right: 60px;
+    height: 100%;
+    display: flex;
+    top:38px;
+    
+}
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: #46a2fd;
+}
+
+
+#ctn-bars-search{
+    position: fixed;
+    top: -90px;
+    width: 100%;
+    background-color: rgba(25, 34, 42, 0.5);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    z-index: 99999;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+    border:none;
+    border-radius: 8px;
+    background-color: rgba(25, 34, 42, 0.5);
+    color:white;
+    
+}
+
+#ctn-bars-search input::placeholder{
+    color:gray;
+
+}
+
+#box-search{
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background-color: rgba(25, 34, 42, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: white;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: var(--blue-color);
+    box-shadow: 0 0 10px var(--blue-color);
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
+
+/* Responsive Design - adaptable a dispositivos moviles*/
+
+@media screen and (max-width: 1220px){
+    #ctn-bars-search,
+    #ctn-bars-search input,
+    #box-search{
+        width: 100%;
+    }
+
+}
+
+

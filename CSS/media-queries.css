@@ -11,7 +11,7 @@
     .logo{
         position: absolute;
         top:0px;
-        left: 30px;
+        left: -10px;
     }
     .nav-links{
         position: absolute;
@@ -73,7 +73,7 @@
 
     .text-gradient{
         top:20%;
-        font-size: 10vmin;
+        font-size: 9vmin;
     }
 
     .services{
@@ -112,9 +112,17 @@
         justify-content: left;
         text-align: left;
         border-radius: 0px 0 0px 0px;
-        background-color: var(--black-background2);
     }
      
+    #ctn-icon-search {
+        position: absolute;
+        margin-top:-3px;
+        margin-right: -50px;
+        width: 30px;
+        cursor: pointer;
+        
+    }
+    
    
     
 }

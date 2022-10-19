@@ -10,6 +10,8 @@
     --black-background3:#23233B;
     --black-background:#020200; 
     --green-color-opacity: rgb(77, 196, 190,0.7);
+    --gray-background: rgba(25, 34, 42, 0.5);
+
     
     --green-color: rgb(77, 196, 190);
     --dark-green-color: #008498;
@@ -169,7 +171,7 @@
 .botText span {
     line-height: 1.5em;
     display: inline-block;
-    background: var(--black-background4);
+    background: var(--gray-background);
     padding: 10px;
     border-radius: 8px;
     border-bottom-left-radius: 2px;
