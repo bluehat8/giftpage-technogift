@@ -17,9 +17,9 @@ window.addEventListener("scroll",function(){
 window.sr=ScrollReveal(
     {
     distance: '25px',
-	duration: 2000,
+	duration: 2500,
 	reset: true
     }
 );
 
-sr.reveal(".contenedor,.gallery",{delay:200, origin:'bottom'});
+sr.reveal(".services,.contenedor,.gallery,.gradient-section,.sect-op",{delay:200, origin:'bottom'});

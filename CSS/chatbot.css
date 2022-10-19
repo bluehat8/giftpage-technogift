@@ -44,6 +44,7 @@
     border-radius: 10px 10px 0px 0px;
     border: 1px solid gray;
     border-bottom: none;
+    box-shadow: 0 1px 0px var(--green-color);
 }
 
 .content {
@@ -196,7 +197,7 @@
     }
     .chat-bar-collapsible {
         position: fixed;
-        bottom: 0;
+        /*bottom: 0;*/
         right: 0;
         width: 100%;
     }

@@ -120,7 +120,7 @@
        
                <header>
                    <div class="header-content">
-                       <h2>BIENVENIDO A <span class="span-text-header">TECHNOGIFT</span>  </h2>
+                       <h2 class="text-header translate" data-speed="0.1">BIENVENIDO A <span class="span-text-header">TECHNOGIFT</span>  </h2>
                        <p>Lorem ipsum, Inventore libero, omnis maiores minima
                         ex,
                         facere quam eveniet ducimus aspernatur vitae iste nam, non laboriosam. Laboriosam illum
@@ -248,31 +248,51 @@
 
     <main>
 
-        <section class="contenedor" id="services">
-            <h2 class="subtitulo"></h2>
-            <div class="contenedor-servicio">
-                <img src="img/Background.png" alt="">
-                <div class="checklist-servicio">
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">1</span>Personaliza tu regalo</h3>
-                        <p>Somos expertos en personalizar.</p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">2</span>Encuentra las mejores ofertas</h3>
-                        <p>Descubre los mejores artìculos tecnològicos al mejor precio.</p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Excelente servicio al cliente</h3>
-                        <p>Contáctanos através de nuestras redes sociales o vía email</p>
-                    </div>
+
+
+
+        <section class="services" id="services">
+
+
+            <div class="section-1">
+                <div class="section-1-content">
+                    <h2>Mercado <span >Gaming</span></h2>
+                    <br>
+                    <p>Desde obtener los mejores artículos del mercado gaming hasta recomendarte el PC gaming
+                        adecuado según tus necesidades </p>
+                    <a href="#">
+                        <div class="get-start">
+                            <span>Comienza ahora</span>
+                            <svg id="left-arrow" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M4 12h16m-7-7l7 7l-7 7" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
+            </div>
+
+            <div class="section-1-1">
+                <img src="img/gaming-services.webp" alt="">
+            </div>
+       
+        </section>
+
+        <section class="gradient-section" id="gradient-section">
+            <div class="text-gradient">
+            ¿BUSCAS EL TECHNOGIFT PERFECTO?
+
+            <div class="textp"> ¡DÉJANOS AYUDARTE CON ESO!
+            </div> 
+             <a class="btnSection" href="">Contáctanos</a>
             </div>
         </section>
 
         <section class="gallery" id="portafolio">
             
-                <h2 class="subtitulo">¿Buscas el TECHNO GIFT perfecto?</h2>
-                <h4 class="subtitulo2">¡Dejanos ayudarte con eso!</h4>
+                <h2 class="subtitulo">Categorías</h2>
+                <h4 class="subtitulo2">¡Encuentra los mejores technogifts aquí!</h4>
 
                     <div class="contenedorImagen">
                         <div class="item" onclick="window.location.href='catalogo-personalizable.html'">
@@ -387,7 +407,7 @@
 
 
         <!--SECCIÓN DE RESEÑAS-->
-        <section class="contenedor" id="reviews">
+        <section class="reviews" id="reviews">
             <p class="opiniones">Lo que opinan <span class="otro-color" class="opiniones"> nuestros clientes</span></p>
             <div class="contenedor-reseñas">
                 <img src="img/bg-reviews.png" alt="" class="img-galeria1"></img>
@@ -450,7 +470,7 @@
 
 
         <!--VIDEO INFORMATIVO-->
-        <section>
+        <section class="sec-op">
             <p class="opiniones">TUTORIAL DE USO<span class="otro-color" class="opiniones"> DE LA PÁGINA</span></p>
             <div class="wrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/8iGMU9s0Ld4"
@@ -465,6 +485,18 @@
 
 
         <!--VIDEO INFORMATIVO-->
+
+
+        <section class="gradient-section">
+            <div class="text-gradient">
+            SE PASA DE PRO
+
+            <div class="textp"> iPhone 14 Pro y iPhone 14 Pro Max
+                Consulta la disponibilidad más adelante
+            </div> 
+             <a class="btnSection" href="">Ver información</a>
+            </div>
+        </section>
 
     </main>
 
@@ -576,9 +608,9 @@
             lateralMenu.style.visibility="hidden";
         });
 
-        btnCategory.addEventListener('click', () => {
+        /*btnCategory.addEventListener('click', () => {
           menuVertical.style.display="block";
-        });
+        });*/
 
         window.onclick = function (event) {
             if (event.target == lateralMenu){
@@ -587,9 +619,10 @@
             lateralMenuContent.style.transform="translateX(-100%)";
             }     
         };
+     
 
     </script>
-
+    <script src="js/app.js"></script>
     <script src="js/modal.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/scroll.js"></script>
