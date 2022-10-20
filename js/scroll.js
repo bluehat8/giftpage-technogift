@@ -4,10 +4,10 @@ window.addEventListener("scroll",function(){
 
         header.classList.toggle("abajo",window.scrollY>0);
         if(window.scrollY>0){
-        header.style.backdropFilter="blur(20px)";   
+        //header.style.backdropFilter="blur(20px)";   
         }
         if(window.scrollY==0){
-        header.style.backdropFilter="blur(0px)";           
+        //header.style.backdropFilter="blur(0px)";           
         }
        // header.classList.toggle("negro",window.scrollY>1850);
         //header.classList.toggle("negro",window.scrollY==section.clientHeight); 

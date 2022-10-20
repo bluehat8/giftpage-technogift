@@ -19,7 +19,7 @@
 
 #ctn-icon-search{
     position: absolute;
-    right: 60px;
+    right: 70px;
     height: 100%;
     display: flex;
     top:38px;
@@ -34,7 +34,7 @@
 }
 
 #ctn-icon-search i:hover{
-    color: #46a2fd;
+    color: var(--green-color);
 }
 
 
