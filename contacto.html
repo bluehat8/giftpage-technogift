@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="CSS/media-queries.css">
     <link rel="stylesheet" href="CSS/catalogo.css">
     <link rel="stylesheet" href="CSS/search-bar.css">
-    <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/modal.css">
 
-    
+    <link rel="stylesheet" href="CSS/fondoJs.css">
+    <link rel="stylesheet" href="CSS/contact.css">
 
 
     <link rel="stylesheet" href="https://use.typekit.net/wtr2apa.css">
@@ -41,10 +41,10 @@
             <li>
                 <a  href="#">Categorías</a>
                 <ul class="menu-vertical">
-                    <li><a href="catalogo-personalizable.html">Teclados</a></li>
-                        <li><a href="catalogo-portatil.html">Portátiles</a></li>
-                        <li><a href="catalogo-audifono.html">Audífonos</a></li>
-                        <li><a href="catalogo-gamers.html">Mouse</a></li>
+                    <li><a href="catalogo-audifono.html">Teclados</a></li>
+                    <li><a href="catalogo-audifono.html">Portátiles</a></li>
+                    <li><a href="catalogo-audifono.html">Audífonos</a></li>
+                    <li><a href="catalogo-audifono.html">Mouse</a></li>
                 </ul>
             </li>
             <li><a class="text-contact" href="contacto.html">Contáctanos</a></li>
@@ -72,14 +72,8 @@
     </div>
 
     <ul id="box-search">
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Custom One Pro</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>CSS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>JavaScript</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>PHP</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>NODEJS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>VUEJS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Como hacer</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Como crear</a></li>
+        <li><a href="catalogo-audifono.html"><i class="fas fa-search"></i>Custom One Pro</a></li>
+        
     </ul>
 
     <div id="cover-ctn-search"></div>
@@ -100,11 +94,11 @@
     
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="catalogo-personalizable.html">Teclados</a>
+                            <a href="catalogo-audifono.html">Teclados</a>
                         </li>
     
                         <li class="list__inside">
-                            <a href="catalogo-portatil.html">Portátiles</a>
+                            <a href="catalogo-audifono.html">Portátiles</a>
                         </li>
 
                         <li class="list__inside">
@@ -112,7 +106,7 @@
                         </li>
 
                         <li class="list__inside">
-                            <a href="catalogo-gamers.html">Mouse</a>
+                            <a href="catalogo-audifono.html">Mouse</a>
                         </li>
                     </ul>
     
@@ -267,17 +261,17 @@
 
     <section class="contact1">
         <div class="contact-container">
+
             <div class="form-container">
                 <h3>Escríbenos</h3>
-                <form action="" class="contact-form">
-                    <input type="text" placeholder="Tu nombre" class="text" required>
-                    <input type="email" name="" id="" placeholder="Escribe tu email..." class="text" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe el mensaje aquí..."
-                        required></textarea>
-                    <input type="submit" value="Enviar" class="send-button">
+
+                <form class="contact-form" action="https://formspree.io/f/mlevjnkn" method="post">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="message" placeholder="Escribe tu Mensaje..."></textarea>
+
+                    <button type="submit" value="Enviar" class="send-button">Enviar</button>
                 </form>
             </div>
-
 
             <!--Maps-->
             <div class="map">
@@ -299,6 +293,13 @@
     <!-- end header -->
 
 
+
+
+
+    <div id="particles-js"></div>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particulas.js"></script>
 
 
     <!-- footer -->

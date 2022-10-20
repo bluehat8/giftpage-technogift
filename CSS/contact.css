@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --first-color: rgba(69, 75, 87, 0.7);
+    --second-color: rgba(255, 255, 255, 0.1);
+}
+
 
 :root{
     --gray-color:  #808080; 
@@ -89,7 +94,7 @@ body {
     align-items: center;
 
     color: white;
-    background:black;
+    background: black;
     position: relative;
        
 }
@@ -102,7 +107,7 @@ body {
     gap: 1.5rem;
     background: linear-gradient(111.56deg, rgba(144, 141, 147, 0.3) -2.6%, rgba(53, 83, 100, 0.225) 89.17%, rgba(53, 83, 100, 0.3) 96.27%);
     opacity: 0.95;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--second-color);
     box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(100px);
     /* Note: backdrop-filter has minimal browser support */
@@ -121,7 +126,7 @@ body {
     font-weight: 600;
     margin-bottom:1rem;
 }
-
+/* AQUI COMIENZA SOLO EL CONTACTO */
 .contact-form{
     display: grid;
     row-gap: 1rem;
@@ -131,7 +136,7 @@ body {
     width: 100%;
     border:none;
     outline: none;
-    background: rgba(69, 75, 87, 0.7);
+    background: var(--first-color);
     padding: 10px;
     font-size: 0.9rem ;
     color: white;
@@ -146,6 +151,8 @@ body {
 .contact-form .send-button{
     border:none;
     outline:none;
+    padding: 8px;
+    border-radius: 0.4rem;
     background: linear-gradient(111.56deg, rgba(144, 141, 147, 0.3) -2.6%, rgba(53, 83, 100, 0.225) 89.17%, rgba(53, 83, 100, 0.3) 96.27%);
     border: 1px solid rgba(171, 171, 171, 0.1);
     backdrop-filter: blur(10px);

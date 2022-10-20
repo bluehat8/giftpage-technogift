@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="CSS/media-queries.css">
     <link rel="stylesheet" href="CSS/catalogo.css">
     <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/fondoJs.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/chatbot.css">
+    <link rel="stylesheet" href="CSS/search-bar.css">
+    <link rel="stylesheet" href="CSS/modal.css">
 
 
 
@@ -24,609 +30,348 @@
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar">
-        <a href="index.html"><img class="logo" src="img/logo.png"></img></a>
-        <ul class="nav-links">
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li>
-                <a href="#">Categorías</a>
-                <ul class="menu-vertical">
-                    <li><a href="catalogo-personalizable.html">Promociones</a></li>
-                    <li><a href="catalogo-portatil.html">Portátiles</a></li>
-                    <li><a href="catalogo-audifono.html">Audífonos</a></li>
-                    <li><a href="catalogo-gamers.html">Gamers</a></li>
-                    <li><a href="catalogo-programadores.html">Programadores</a></li>
-                    <li><a href="catalogo-moviles.html">Móviles</a></li>
-                    <li><a href="catalogo-accesorio.html">Accesorios</a></li>
+    <script src="https://kit.fontawesome.com/ceb3ebf92c.js" crossorigin="anonymous"></script>
 
+        <!--Navbar-->
+        <nav class="navbar" id="navbar">
+            <a href="index.html"><img class="logo" src="img/logo.png"></img></a>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li>
+                    <a  href="#">Categorías</a>
+                    <ul class="menu-vertical">
+                        <li><a href="catalogo-audifono.html">Teclados</a></li>
+                        <li><a href="catalogo-audifono.html">Portátiles</a></li>
+                        <li><a href="catalogo-audifono.html">Audífonos</a></li>
+                        <li><a href="catalogo-audifono.html">Mouse</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a class="text-contact" href="contacto.html">Contáctanos</a></li>
+                <li><a id="myBtn"  href="#myModal">FAQ</a></li>
+                <!--<img onclick="window.location.href='carrito.html'" src="img/Icons/cart.svg" alt="" class="img-icons">-->
+                
+            
+                <!--<img onclick="window.location.href='login.html'" src="img/Icons/user.png" alt="" class="img-icons">-->
+       
+            </ul>
+       
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
+            <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
 
+            
+        </nav>
 
-                </ul>
-            </li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a id="myBtn" href="#myModal">FAQ</a></li>
-            <img onclick="window.location.href='carrito.html'" src="img/Icons/cart.svg" alt="" class="img-icons">
-            <img src="img/Icons/searchIcon.svg" alt="" class="img-icons">
-            <img onclick="window.location.href='login.html'" src="img/Icons/user.png" alt="" class="img-icons">
-
+        <div id="ctn-bars-search">
+            <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+        </div>
+    
+        <ul id="box-search">
+            <li><a href="catalogo-audifono.html"><i class="fas fa-search"></i>Custom one pro</a></li>
+            
         </ul>
+    
+        <div id="cover-ctn-search"></div>
 
-        <img src="img/hamburguer.png" alt="" class="menu-btn">
 
-    </nav>
+    
+
+
+        <div id="container-menu" class="container-menu">
+            <div id="cont-menu" class="cont-menu">
+                <nav>
+                    
+                    <div class="normal-nav">
+                        <a href="#">Inicio</a>
+
+                    </div>
+                            <a id="navLink" href="#" class="nav__link">Categorías</a>
+        
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="catalogo-audifono.html">Teclados</a>
+                            </li>
+        
+                            <li class="list__inside">
+                                <a href="catalogo-audifono.html">Portátiles</a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-audifono.html">Audífonos</a>
+                            </li>
+
+                            <li class="list__inside">
+                                <a href="catalogo-audifono.html">Mouse</a>
+                            </li>
+
+                        </ul>
+        
+                    </li>
+
+                   
+                    <div class="normal-nav">
+                        <a href="contacto.html">Contáctanos</a>
+                    </div>
+
+                    <div class="normal-nav">
+                        <!--<a id="myBtn"  href="#myModal">FAQ</a>-->
+
+                    </div>
+                    
+                </nav>
+                <div id="closeIcon" class="closeIcon">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!--<label for="btn-menu">✖️</label>-->
+            </div>
+        </div>
 
 
     <header class="header-cat">
         <div class="header-content1">
             <h2>AUDI<span class="span-text-header">FONOS</span> </h2>
-            <!--<div class="line"></div>-->
-            <!---  <div class="contenedor">
-                       <div class="box">
-                           <div class="content">
-                               <a href="#" id="ctn" class="ctn">About us</a>
-   
-                           </div>
-                       </div>
-                   </div> -->
-
         </div>
     </header>
+<!-- Trigger/Open The Modal -->
+<!-- The Modal -->
 
-    <!-- Trigger/Open The Modal -->
+   <!-- The Modal -->
+   <div id="myModal" class="modal">
 
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div id="modal-content" class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes</h5>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes (FAQ)</h5>
-                        <span class="close">&times;</span>
-                </div>
-                <class class="modal-body">
-                    <div>
-                        <h3>¿Qué es TECHNO GIFT?</h5>
-                            <p>technogift.com es una tienda de regalos tecnológicos </p>
-
-                            <br>
-
-                            <h3>¿Qué puedo hacer aquí?</h5>
-                                <p>En technogift.com podra realizar compras de regalos tecnológicos
-                                </p>
-
-                                <br>
-
-                                <h3>¿Cómo puedo comprar un regalo?</h5>
-                                    <p>Es tan sencillo como ir a la página principal, dar click en el componente
-                                        CONTÁCTANOS
-                                        de la barra de navegación y rellenar los campos con la información solicitada.
-                                    </p>
-
-
-
-                                    <br>
-                                    <br>
-                                    <video preload="metadata" muted controls width="100%" height="auto"
-                                        style="text-align: center;">
-                                        <source src="Videos/howToCreateOffert.mp4">
-                                    </video>
-
-
-                                    <br>
-
-                                    <h3>¿Quiénes son los desarrolladores de este sitio web?</h5>
-                                        <p>Agustín Gustavo Amaya Soza | N.Carnet: 2018-1231U</p>
-                                        <p>Ricardo Antonio Morales | N.Carnet: 2018-1015U</p>
-                                        <p>Raquel Martínez | N.Carnet: 2018-1015U</p>
-                                        <p>Magaly Lizbeth Vega Ruiz| N.Carnet: 2018-1015U</p>
-
-
-                                        <br>
-
-                                        <h3>¿Cómo puedo contactar con el desarrollador?</h5>
-                                            <p>Puedes hacerlo por correo electronico
-                                                <a target="_blank"
-                                                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=agustin.amaya.g21@gmail.com&subject=Duda%20sobre%20ClinicaNarvaez">(Gmail)</a>
-                                                o puedes hacerlo por
-                                                <a target="_blank" href="https://www.facebook.com">Facebook</a>,
-                                                <a target="_blank" href="https://www.twitter.com">Twitter</a>,
-                                                <a target="_blank" href="https://www/instagram.com">Instagram</a>,
-                                                <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba"
-                                                    target="_blank">WhatsApp</a>
-                                                o <a target="_blank" href="https://t.me/agustinavello">Telegram</a>.
-                                            </p>
-                    </div>
-                </class>
             </div>
+            <class class="modal-body">
+                <div>
+                    <h3>¿Qué es TECHNO GIFT?</h3>
+                    <p>technogift.com es una tienda de regalos tecnológicos </p>
+
+                    <h3>¿Qué puedo hacer aquí?</h3>
+                    <p>En technogift.com puede encontrar información de artículos tecnológicos y contactarnos
+                        en caso de estar interesado en uno de nuestros productos.
+                    </p>
+                    
+                    <h3>¿Cómo puedo contactarles?</h3>
+                    <p>Es tan sencillo como ir a la página principal, dar click en el componente
+                        CONTÁCTANOS
+                        de la barra de navegación y rellenar los campos con la información solicitada.
+                    </p>
+
+                    <h3>¿Qué productos ofrece TECHNOGIFT?</h3>
+                    <p>PC</p>
+                    <p>Teclados</p>
+                    <p>Audífonos</p>
+                    <p>Mouse</p>
+
+
+
+                                
+                                <h3>¿Quiénes son los desarrolladores de este sitio web?</h5>
+                                    <p>Agustín Gustavo Amaya Soza </p>
+                                    <p>Ricardo Antonio Morales</p>
+                                    <p>Yanil Morales</p>
+                                    <p>Kenneth Teller</p>
+
+
+                    <h3>¿Cómo puedo contactar con los desarrolladores?</h3>
+                    <p>Puedes hacerlo por correo electronico
+                        <a target="_blank"
+                            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=agustin.amaya.g21@gmail.com&subject=Duda%20sobre%20ClinicaNarvaez">(Gmail)</a>
+                        o puedes hacerlo por
+                        <a target="_blank" href="https://www.facebook.com">Facebook</a>,
+                        <a target="_blank" href="https://www.twitter.com">Twitter</a>,
+                        <a target="_blank" href="https://www/instagram.com">Instagram</a> o
+                        <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba"
+                            target="_blank">WhatsApp</a>
+                        
+                    </p>
+                </div>
+            </class>
         </div>
-
-
-
-
     </div>
 
+</div>
 
-
-    <!-- bottom header -->
-
-    <!-- end bottom header -->
-
-    <!-- end main header -->
-
-    <!-- end header -->
-
-
-    <!-- products content -->
-    <div class="bg-main">
-        <div class="container">
-            <div class="box">
-                <div class="breadcumb">
-                    <a href="./index.html">Inicio</a>
-                    <span><i class='bx bxs-chevrons-right'></i></span>
-                    <a href="">Audífonos</a>
-                </div>
+<!-- products content -->
+<section>
+    <!-- particles.js container -->
+    <div class="containerHeader">
+        <!--
+        <div id="particles-js"></div>-->
+        <div class="containMain contenedor">
+            <div class="Item Audifonos01">
+                <img src="img/productos/Audifonos01.png" alt="imagen 1">
             </div>
-
-
-            <div class="bg-main">
-                <div class="mid-header container">
-                    <label for="status1">
-                        Mostrando 500 productos
-
-                    </label>
-                    <div class="search">
-                        <input type="text" placeholder="Buscar">
-                        <i class='bx bx-search-alt'></i>
-                    </div>
-
-
-                    <ul class="user-menu">
-                    </ul>
-                </div>
+            <div class="Item">
+                <h1>Unos Audifonos completamente en otro nivel</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat nemo aliquam suscipit ratione, quis esse
+                    ipsam? Dolorum delectus rerum temporibus laboriosam dolorem totam vero dicta illum consectetur fugit. Non.
+                </p>
+                <button class="button01"> Saber Más </button>
             </div>
-
-            <div class="line"></div>
-
-            <div class="box">
-                <div class="row">
-                    <div class="col-3 filter-col" id="filter-col">
-                        <div class="box filter-toggle-box">
-                            <button class="btn-flat btn-hover" id="filter-close">close</button>
-                        </div>
-
-                        <div class="box">
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status1">
-                                        <label for="status1">
-                                            Mostrar solo descuento
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status2">
-                                        <label for="status2">
-                                            Solo personalizables
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <!--<div class="box">
-            <div class="slider">
-                <div class="progress"></div>
+        </div>
+    </div>
+    <div class="containerHeader">
+        <div class="containMain contenedor">
+            <div class="Item">
+                <h1>Unos Audifonos completamente en otro nivel</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat nemo aliquam suscipit ratione, quis esse
+                    ipsam? Dolorum delectus rerum temporibus laboriosam dolorem totam vero dicta illum consectetur fugit. Non.
+                </p>
+                <button class="button01"> Saber Más </button>
             </div>
-
-            <div class="range-input">
-                <input type="range" class="range-min" min="0" max="10000" value="2500">
-                <input type="range" class="range-max" min="0" max="10000" value="7500">
-
+            <div class="Item Audifono02Blanco">
+                <img src="img/productos/Audifono02Blanco.png" alt="imagen 1">
             </div>
-        </div>-->
+        </div>
+    </div>
+    <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particulas.js"></script>
+    <script src="js/audifonos.js"></script>
+    <script src="js/ScrollReveal.js"></script>
+</section>
 
-                        <div class="box">
-                            <span class="filter-header-price"><i class='bx bxs-chevron-down' style='color:#ffffff'></i>
-                                Precio
-                            </span>
+<!-- end products content -->
 
-                            <div class="box-slider">
-                                <div class="slider">
-                                    <div class="progress"></div>
-                                </div>
-
-                                <div class="range-input">
-                                    <input type="range" class="range-min" min="0" max="10000" value="2500">
-                                    <input type="range" class="range-max" min="0" max="10000" value="7500">
-
-                                </div>
-                            </div>
-
-                            <div class="price-range">
-                                <input type="text">
-                                <span>-</span>
-                                <input type="text">
-                            </div>
-                        </div>
-
-
-                        <div class="box">
-                            <span class="filter-header"><i class='bx bxs-chevron-down' style='color:#ffffff'></i>
-                                Sub categoría
-                            </span>
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1" checked="checked">
-                                        <label for="remember1">
-                                            Wireless
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1" checked="checked">
-                                        <label for="remember1">
-                                            In-ear headphone
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-
-
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1" checked="checked">
-                                        <label for="remember1">
-                                            Over-ear headphone
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1" checked="checked">
-                                        <label for="remember1">
-                                            sport headphone
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <span class="filter-header"><i class='bx bxs-chevron-down' style='color:#ffffff'></i>
-                                Realease status
-                            </span>
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status1">
-                                        <label for="status1">
-                                            Novedades
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status2">
-                                        <label for="status2">
-                                            Proximamente
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <span class="filter-header"><i class='bx bxs-chevron-down' style='color:#ffffff'></i>
-                                Marcas
-                            </span>
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1" checked="checked">
-                                        <label for="remember1">
-                                            JBL
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember2">
-                                        <label for="remember2">
-                                            Beat
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember3">
-                                        <label for="remember3">
-                                            Logitech
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember4">
-                                        <label for="remember4">
-                                            Samsung
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember5">
-                                        <label for="remember5">
-                                            Sony
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <span class="filter-header"><i class='bx bxs-chevron-down' style='color:#ffffff'></i>
-                                Colores
-                            </span>
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
-                                            Rojo
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember2">
-                                        <label for="remember2">
-                                            Azul
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember3">
-                                        <label for="remember3">
-                                            Blanco
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember4">
-                                        <label for="remember4">
-                                            Rosa
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember5">
-                                        <label for="remember5">
-                                            Amarillo
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!--<div class="box">
-                <span class="filter-header"><i class='bx bxs-chevron-down' style='color:#ffffff'  ></i>
-                    rating
-                </span>
-                <ul class="filter-list">
-                    <li>
-                        <div class="group-checkbox">
-                            <input type="checkbox" id="remember1">
-                            <label for="remember1">
-                                <span class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </span>
-                                <i class='bx bx-check'></i>
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="group-checkbox">
-                            <input type="checkbox" id="remember1">
-                            <label for="remember1">
-                                <span class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </span>
-                                <i class='bx bx-check'></i>
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="group-checkbox">
-                            <input type="checkbox" id="remember1">
-                            <label for="remember1">
-                                <span class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </span>
-                                <i class='bx bx-check'></i>
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="group-checkbox">
-                            <input type="checkbox" id="remember1">
-                            <label for="remember1">
-                                <span class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </span>
-                                <i class='bx bx-check'></i>
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="group-checkbox">
-                            <input type="checkbox" id="remember1">
-                            <label for="remember1">
-                                <span class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </span>
-                                <i class='bx bx-check'></i>
-                            </label>
-                        </div>
-                    </li>
+<!-- footer -->
+<footer class="bg-second">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">Products</h3>
+                <ul class="menu">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">product help</a></li>
+                    <li><a href="#">warranty</a></li>
+                    <li><a href="#">order status</a></li>
                 </ul>
-            </div>-->
-                    </div>
-                    <div class="col-9 col-md-12">
-                        <div class="box filter-toggle-box">
-                            <button class="btn-flat btn-hover" id="filter-toggle">filter</button>
-                        </div>
-                        <div class="box">
-                            <div class="row" id="products"></div>
-                        </div>
-                        <div class="box">
-                            <ul class="pagination">
-                                <li><a href="#"><i class='bx bxs-chevron-left'></i></a></li>
-                                <li><a href="#" class="active">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#"><i class='bx bxs-chevron-right'></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">services</h3>
+                <ul class="menu">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">product help</a></li>
+                    <li><a href="#">warranty</a></li>
+                    <li><a href="#">order status</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">support</h3>
+                <ul class="menu">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">product help</a></li>
+                    <li><a href="#">warranty</a></li>
+                    <li><a href="#">order status</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="contact">
+                    <h3 class="contact-header">
+                        TECHNO GIFT
+                    </h3>
+                    <ul class="contact-socials">
+                        <li><a href="#">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class='bx bxl-youtube'></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class='bx bxl-twitter'></i>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <input type="email" placeholder="ENTER YOUR EMAIL">
+                    <button>subscribe</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end products content -->
-
-    <!-- footer -->
-    <footer class="bg-second">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">Products</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">warranty</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">services</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">warranty</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">support</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">warranty</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6 col-sm-12">
-                    <div class="contact">
-                        <h3 class="contact-header">
-                            TECHNO GIFT
-                        </h3>
-                        <ul class="contact-socials">
-                            <li><a href="#">
-                                    <i class='bx bxl-facebook-circle'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-instagram-alt'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-youtube'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-twitter'></i>
-                                </a></li>
-                        </ul>
-                    </div>
-                    <div class="subscribe">
-                        <input type="email" placeholder="ENTER YOUR EMAIL">
-                        <button>subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+</footer>
 
 
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-        menuBtn.addEventListener('click', () => {
-            navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
-    <script src="js/menu.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/modal.js"></script>
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+    var lateralMenu= document.getElementById('container-menu');
+    var lateralMenuContent= document.getElementById('cont-menu');
+    const closeIcon= document.querySelector('.closeIcon');
+    var lstShow= document.querySelector('.list__show');
+    var menuVertical= document.getElementById('menu-vertical2');
+    var lstInside= document.querySelector('.list__inside');
+
+    document.getElementById('navLink').onclick = function() {
+    lstShow.classList.toggle('bajar');
+    lstInside.classList.toggle('bajar');
+    
+    }
+
+    menuBtn.addEventListener('click', () => {
+        //navlinks.classList.toggle('mobile-menu');
+        lateralMenu.style.opacity=1;
+        lateralMenu.style.visibility="visible";
+        lateralMenuContent.style.transform="translateX(0%)";
+
+    });
+
+    closeIcon.addEventListener('click', () => {
+        lateralMenuContent.style.transform="translateX(-100%)";
+        lateralMenu.style.opacity=0;
+        lateralMenu.style.visibility="hidden";
+    });
+
+    /*btnCategory.addEventListener('click', () => {
+      menuVertical.style.display="block";
+    });*/
+
+    window.onclick = function (event) {
+        if (event.target == lateralMenu){
+        lateralMenu.style.opacity=0;
+        lateralMenu.style.visibility="hidden";
+        lateralMenuContent.style.transform="translateX(-100%)";
+        }     
+    };
+ 
+
+</script>
+
+<script src="js/app.js"></script>
+<script src="js/modal.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/scroll.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/response.js"></script> 
+<script src="js/chat.js"></script>  
+<script src="js/search.js"></script>  
+</script>
+<script src="js/menu.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/modal.js"></script>
 
 
 
-    <!-- app js -->
-    <script src="js/app.js"></script>
-    <script src="js/product.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/scroll.js"></script>
-
+<!-- app js -->
+<script src="js/app.js"></script>
+<script src="js/product.js"></script>
+<script src="js/range-slider.js"></script>
 
 
 
