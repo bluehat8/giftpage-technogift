@@ -53,13 +53,14 @@
     .header-content {
         
         text-align: center;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 0px auto;
+        margin-bottom: 35%;
         
     }
     
     .header-content h2 {
-        font-size: 40px;
+        width: 100%;
+        font-size: 6vmin;
         text-align: center;
     }
     
@@ -139,7 +140,13 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .gallery{
-        margin-bottom: -200px;
+        margin-bottom: -500px;
+    }
+    .header-content {
+        
+        
+        margin-bottom: 25%;
+        
     }
 }
 
@@ -150,11 +157,23 @@
     .gallery{
         margin-bottom: 0px;
     }
+    .header-content {
+        
+        margin-bottom: 16rem;
+        
+    }
 }
 
 @media screen and (max-width: 580px){
     .posts{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-content {
+        
+        text-align: center;
+        margin-bottom: 55%;
+        
     }
 }
 

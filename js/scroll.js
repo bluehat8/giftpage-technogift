@@ -22,4 +22,4 @@ window.sr=ScrollReveal(
     }
 );
 
-sr.reveal(".services,.contenedor,.gallery,.gradient-section,.sect-op",{delay:200, origin:'bottom'});
+sr.reveal(".services,.contenedor,.gallery,.gradient-section,.sect-op,.vendidos,.reviews",{delay:200, origin:'bottom'});

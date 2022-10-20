@@ -7,52 +7,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/modal.css">
-    <link rel="stylesheet" href="CSS/modal-web.css">
-
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/media-queries.css">
     <link rel="stylesheet" href="CSS/catalogo.css">
-    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/search-bar.css">
     <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/modal.css">
 
+    
 
 
     <link rel="stylesheet" href="https://use.typekit.net/wtr2apa.css">
-
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/wtr2apa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"  rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <!--Navbar-->
-    <nav class="navbar">
+<body id="body1">
+    <script src="https://kit.fontawesome.com/ceb3ebf92c.js" crossorigin="anonymous"></script>
+
+      <!--Navbar-->
+      <nav class="navbar" id="navbar">
         <a href="index.html"><img class="logo" src="img/logo.png"></img></a>
+
         <ul class="nav-links">
             <li><a class="active" href="index.html">Inicio</a></li>
             <li>
-                <a href="#">Categorías</a>
+                <a  href="#">Categorías</a>
                 <ul class="menu-vertical">
-                    <li><a href="catalogo-personalizable.html">Promociones</a></li>
-                    <li><a href="catalogo-portatil.html">Portátiles</a></li>
-                    <li><a href="catalogo-audifono.html">Audífonos</a></li>
-                    <li><a href="catalogo-gamers.html">Gamers</a></li>
-                    <li><a href="catalogo-programadores.html">Programadores</a></li>
-                    <li><a href="catalogo-moviles.html">Móviles</a></li>
-                    <li><a href="catalogo-accesorio.html">Accesorios</a></li>
+                    <li><a href="catalogo-personalizable.html">Teclados</a></li>
+                        <li><a href="catalogo-portatil.html">Portátiles</a></li>
+                        <li><a href="catalogo-audifono.html">Audífonos</a></li>
+                        <li><a href="catalogo-gamers.html">Mouse</a></li>
                 </ul>
             </li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a id="myBtn" href="#myModal">FAQ</a></li>
-            <!-- <img onclick="window.location.href='carrito.html'" src="img/Icons/cart.svg" alt="" class="img-icons"> -->
-            <img src="img/Icons/searchIcon.svg" alt="" class="img-icons">
-            <img onclick="window.location.href='login.html'" src="img/Icons/user.png" alt="" class="img-icons">
+            <li><a class="text-contact" href="contacto.html">Contáctanos</a></li>
+            <li><a id="myBtn"  href="#myModal">FAQ</a></li>
+            <!--<img onclick="window.location.href='carrito.html'" src="img/Icons/cart.svg" alt="" class="img-icons">-->
+            
+        
+            <!--<img onclick="window.location.href='login.html'" src="img/Icons/user.png" alt="" class="img-icons">-->
+   
         </ul>
+   
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-        <img src="img/hamburguer.png" alt="" class="menu-btn">
+        <div id="ctn-icon-search">
+            <i class="fas fa-search" id="icon-search"></i>
+        </div>
+
+        
     </nav>
+
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div>
+
+    <ul id="box-search">
+        <li><a href="articulo.html"><i class="fas fa-search"></i>Custom One Pro</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>CSS</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>JavaScript</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>PHP</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>NODEJS</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>VUEJS</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>Como hacer</a></li>
+        <li><a href="articulo.html"><i class="fas fa-search"></i>Como crear</a></li>
+    </ul>
+
+    <div id="cover-ctn-search"></div>
+
+
+
+
+
+    <div id="container-menu" class="container-menu">
+        <div id="cont-menu" class="cont-menu">
+            <nav>
+                
+                <div class="normal-nav">
+                    <a href="#">Inicio</a>
+
+                </div>
+                        <a id="navLink" href="#" class="nav__link">Categorías</a>
+    
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="catalogo-personalizable.html">Teclados</a>
+                        </li>
+    
+                        <li class="list__inside">
+                            <a href="catalogo-portatil.html">Portátiles</a>
+                        </li>
+
+                        <li class="list__inside">
+                            <a href="catalogo-audifono.html">Audífonos</a>
+                        </li>
+
+                        <li class="list__inside">
+                            <a href="catalogo-gamers.html">Mouse</a>
+                        </li>
+                    </ul>
+    
+                </li>
+
+               
+                <div class="normal-nav">
+                    <a href="#">Contáctanos</a>
+                </div>
+
+                <div class="normal-nav">
+                    <a id="myBtn"  href="#myModal">FAQ</a>
+
+                </div>
+                
+            </nav>
+            <div id="closeIcon" class="closeIcon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <!--<label for="btn-menu">✖️</label>-->
+        </div>
+    </div>
 
     <header class="header-contact">
         <div class="header-content1">
@@ -73,79 +155,71 @@
     <!-- Trigger/Open The Modal -->
 
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+   <!-- The Modal -->
+   <div id="myModal" class="modal">
 
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes (FAQ)</h5>
-                        <span class="close">&times;</span>
-                </div>
-                <class class="modal-body">
-                    <div>
-                        <h3>¿Qué es TECHNO GIFT?</h5>
-                            <p>technogift.com es una tienda de regalos tecnológicos </p>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div id="modal-content" class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title" id="staticBackdropLabel">Preguntas frecuentes</h5>
 
-                            <br>
-
-                            <h3>¿Qué puedo hacer aquí?</h5>
-                                <p>En technogift.com podra realizar compras de regalos tecnológicos
-                                </p>
-
-                                <br>
-
-                                <h3>¿Cómo puedo comprar un regalo?</h5>
-                                    <p>Es tan sencillo como ir a la página principal, dar click en el componente
-                                        CONTÁCTANOS
-                                        de la barra de navegación y rellenar los campos con la información solicitada.
-                                    </p>
-
-
-
-                                    <br>
-                                    <br>
-                                    <video preload="metadata" muted controls width="100%" height="auto"
-                                        style="text-align: center;">
-                                        <source src="Videos/howToCreateOffert.mp4">
-                                    </video>
-
-
-                                    <br>
-
-                                    <h3>¿Quiénes son los desarrolladores de este sitio web?</h5>
-                                        <p>Agustín Gustavo Amaya Soza | N.Carnet: 2018-1231U</p>
-                                        <p>Ricardo Antonio Morales | N.Carnet: 2018-1015U</p>
-                                        <p>Raquel Martínez | N.Carnet: 2018-1015U</p>
-                                        <p>Magaly Lizbeth Vega Ruiz| N.Carnet: 2018-1015U</p>
-
-
-                                        <br>
-
-                                        <h3>¿Cómo puedo contactar con el desarrollador?</h5>
-                                            <p>Puedes hacerlo por correo electronico
-                                                <a target="_blank"
-                                                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=agustin.amaya.g21@gmail.com&subject=Duda%20sobre%20ClinicaNarvaez">(Gmail)</a>
-                                                o puedes hacerlo por
-                                                <a target="_blank" href="https://www.facebook.com">Facebook</a>,
-                                                <a target="_blank" href="https://www.twitter.com">Twitter</a>,
-                                                <a target="_blank" href="https://www/instagram.com">Instagram</a>,
-                                                <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba"
-                                                    target="_blank">WhatsApp</a>
-                                                o <a target="_blank" href="https://t.me/agustinavello">Telegram</a>.
-                                            </p>
-                    </div>
-                </class>
             </div>
+            <class class="modal-body">
+                <div>
+                    <h3>¿Qué es TECHNO GIFT?</h3>
+                    <p>technogift.com es una tienda de regalos tecnológicos </p>
+
+                    <h3>¿Qué puedo hacer aquí?</h3>
+                    <p>En technogift.com puede encontrar información de artículos tecnológicos y contactarnos
+                        en caso de estar interesado en uno de nuestros productos.
+                    </p>
+                    
+                    <h3>¿Cómo puedo contactarles?</h3>
+                    <p>Es tan sencillo como ir a la página principal, dar click en el componente
+                        CONTÁCTANOS
+                        de la barra de navegación y rellenar los campos con la información solicitada.
+                    </p>
+
+                    <h3>¿Qué productos ofrece TECHNOGIFT?</h3>
+                    <p>PC</p>
+                    <p>Teclados</p>
+                    <p>Audífonos</p>
+                    <p>Mouse</p>
+
+
+
+                                
+                                <h3>¿Quiénes son los desarrolladores de este sitio web?</h5>
+                                    <p>Agustín Gustavo Amaya Soza </p>
+                                    <p>Ricardo Antonio Morales</p>
+                                    <p>Yanil Morales</p>
+                                    <p>Kenneth Teller</p>
+
+
+                    <h3>¿Cómo puedo contactar con los desarrolladores?</h3>
+                    <p>Puedes hacerlo por correo electronico
+                        <a target="_blank"
+                            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=agustin.amaya.g21@gmail.com&subject=Duda%20sobre%20ClinicaNarvaez">(Gmail)</a>
+                        o puedes hacerlo por
+                        <a target="_blank" href="https://www.facebook.com">Facebook</a>,
+                        <a target="_blank" href="https://www.twitter.com">Twitter</a>,
+                        <a target="_blank" href="https://www/instagram.com">Instagram</a> o
+                        <a href="https://api.whatsapp.com/send?phone=+50575185635&text=Hola, esto es solo un texto de prueba"
+                            target="_blank">WhatsApp</a>
+                        
+                    </p>
+                </div>
+            </class>
         </div>
-
-
-
-
     </div>
 
+</div>
 
-    <div class="bg-main">
+   
+
+
+    <!--<div class="bg-main">
         <div class="container">
             <div class="box">
                 <div class="breadcumb">
@@ -155,11 +229,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
 
-    <!-- WEB CAM MODAL -->
+    <!-- WEB CAM MODAL 
     <div id="myModalCam" class="modalweb">
 
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -187,7 +261,7 @@
         </div>
     </div>
 
-    <script src="js/webcam.js"></script>
+    <script src="js/webcam.js"></script>-->
 
     <!--CONTACT FORM-->
 
@@ -290,24 +364,75 @@
         </div>
     </footer>
 
+    <div class="top-container">
+            
+        <a href="#" class="top"><i class='bx bx-up-arrow-alt' style="color:white;" ></i></a>
+        <!--<a  id="btnBot" class="top"><i class='bx bxl-whatsapp' ></i></a>-->
 
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-        menuBtn.addEventListener('click', () => {
-            navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
-    <script src="js/menu.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/modal-webcam.js"></script>
+
+    </div>
+
+
+  
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+    var lateralMenu= document.getElementById('container-menu');
+    var lateralMenuContent= document.getElementById('cont-menu');
+    const closeIcon= document.querySelector('.closeIcon');
+    var lstShow= document.querySelector('.list__show');
+    var menuVertical= document.getElementById('menu-vertical2');
+    var lstInside= document.querySelector('.list__inside');
+
+    document.getElementById('navLink').onclick = function() {
+    lstShow.classList.toggle('bajar');
+    lstInside.classList.toggle('bajar');
+    
+    }
+
+    menuBtn.addEventListener('click', () => {
+        //navlinks.classList.toggle('mobile-menu');
+        lateralMenu.style.opacity=1;
+        lateralMenu.style.visibility="visible";
+        lateralMenuContent.style.transform="translateX(0%)";
+
+    });
+
+    closeIcon.addEventListener('click', () => {
+        lateralMenuContent.style.transform="translateX(-100%)";
+        lateralMenu.style.opacity=0;
+        lateralMenu.style.visibility="hidden";
+    });
+
+    /*btnCategory.addEventListener('click', () => {
+      menuVertical.style.display="block";
+    });*/
+
+    window.onclick = function (event) {
+        if (event.target == lateralMenu){
+        lateralMenu.style.opacity=0;
+        lateralMenu.style.visibility="hidden";
+        lateralMenuContent.style.transform="translateX(-100%)";
+        }     
+    };
+ 
+
+</script>
+
 
 
     <!-- app js -->
     <script src="js/app.js"></script>
     <script src="js/product.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/response.js"></script> 
+    <script src="js/chat.js"></script>  
+    <script src="js/search.js"></script>  
 
 
 

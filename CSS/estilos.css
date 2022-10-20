@@ -265,23 +265,22 @@ a {
 }
 
 .header-content {
-    margin-bottom: 16rem;
+    margin-bottom: 20%;
     color: white;
     margin-left: 5.5rem;
     margin-right: 3rem;
-    margin-top: calc(50% - 2rem);
 
     
 }
 
 .header-content h2 {
-    font-size:5.5vmin;
+    font-size:6vmin;
     margin-bottom: 10px;
 }
 
 .header-content p{
     margin-bottom: 2.5rem;
-    width: 40%;
+    width: 80%;
     font-size: 2vmin;
 
 }
@@ -468,7 +467,8 @@ nav .nav-links .sidebar-logo .bx-x {
 }
 
 .gallery{
-    margin-bottom: -250px;
+    
+    margin-bottom: -500px;
 }
 
 .shadow{
@@ -881,13 +881,13 @@ nav .nav-links .sidebar-logo .bx-x {
 
 .item2:nth-child(4){ 
     text-align: center;
-    background-image: url("../img/game-control.webp");
+    background-image: url("../img/teclado.webp");
     background-position: center;
     background-size: cover;
 
 }
 
-.item2:nth-child(5){
+/*.item2:nth-child(5){
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -898,7 +898,7 @@ nav .nav-links .sidebar-logo .bx-x {
 
 .item2:nth-child(5) .glass p{
     margin-top: 10%;
-}
+}*/
 
 /*.item2:nth-child(6){
     background-position: center;
@@ -1539,6 +1539,7 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
     color:white;
+    margin-bottom: 250px;
 }
 
 .text-gradient{
@@ -1569,7 +1570,7 @@ footer {
     text-align: center;
     word-wrap: break-word;
     width: 50%;
-    margin-bottom: -15px;
+    margin-bottom: 0px;
    
 }
 
@@ -1787,7 +1788,7 @@ transition: all 500ms ease-in-out;
 
 .list__show.bajar{
     visibility: visible;
-    height: 350px;
+    height: 200px;
     opacity: 1;
 }
 
